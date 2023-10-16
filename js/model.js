@@ -1,5 +1,6 @@
 const model = {
   app: {
+    //innstillinger som gjelder generelt for hele nettsiden
     genOpt :{
         lang: en,
         darkMode: false,
@@ -24,6 +25,7 @@ const model = {
       "wiki",
     ],
 
+    //Profilen som er pålogget vil ha alle disse tingene tilgjengelig
     //Tøm dummydata før GOtime
     loggedInUser:[{
       userName:"test",
@@ -55,6 +57,7 @@ const model = {
     }],  
   },
 
+//Alt som blir lagt inn i input, mellomlagres her frem til lagring i data (skjer når man trykker på lagre)
   input:{
     
     loginAs: {
@@ -93,6 +96,7 @@ const model = {
     editProfileImg: "",
 }, 
 
+//Her blir alle data fra input lagret permanent til evt sletting
   data:{
     workouts: ["squats",],
 
@@ -117,6 +121,8 @@ const model = {
       ab:["abs"],
     },
 
+    //WP, schedule, log ligger lagret på hver bruker. Mulig vi gjør det om til lister etter hvert
+    //og linker til bruker med id'er
     profileList:[{
       id: "123",
       profileName: "Olivia",
