@@ -2,7 +2,7 @@ const model = {
   app: {
     //innstillinger som gjelder generelt for hele nettsiden
     genOpt :{
-        lang: en,
+        lang: 'en',
         darkMode: false,
         metric: true,
         kg: true,
@@ -66,7 +66,9 @@ const model = {
     },
     
     createUser:{
+      id:"",
       userName:"",
+      password: "",
       profileName: "",
       profileImg:"",
       homeTown: "",
@@ -124,8 +126,10 @@ const model = {
     //WP, schedule, log ligger lagret på hver bruker. Mulig vi gjør det om til lister etter hvert
     //og linker til bruker med id'er
     profileList:[{
-      id: "123",
+      id: 1,
+      userName: "Oliva11",
       profileName: "Olivia",
+      password: "password",
       profileImg:"",
       homeTown: "place",
       age: "00",
@@ -153,3 +157,44 @@ const model = {
     },],
   },
 };
+
+
+
+const inputCopy ={
+    
+  loginAs: {
+    userName: "",
+    password: "",
+  },
+  
+  createUser:{
+    id:"",
+    userName:"",
+    profileName: "",
+    profileImg:"",
+    homeTown: "",
+    age: "",
+    sex:"",
+    height:"",
+    weight:"",
+    aboutMe: "",
+    workoutprogram:[],
+    log:[],
+    schedule:[],
+},
+
+  schedule: {
+    day: ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"],
+    time: [""],
+    workout: [""],
+    bodypart: [""],
+  },
+  
+  log: {
+    time: [""],
+    workout: [""],
+    bodypart: [""],
+  },    
+
+  editProfileImg: "",
+}

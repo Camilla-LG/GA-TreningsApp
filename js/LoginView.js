@@ -1,10 +1,11 @@
-loginView();
+
 function loginView(){
     document.getElementById('app').innerHTML = /*HTML*/`
     <h1>MuscleWiki</h1>
-    <input type="text" placeholder="Username">
-    <input type="password" placeholder="Password"> 
-    <button>Login</button>
-    <button>Register</button>
+    <input type="text" placeholder="Username" onchange="model.input.loginAs.userName = this.value">
+    <input type="password" placeholder="Password" onchange="model.input.loginAs.password = this.value"> 
+    <button onclick="mainPage()">Login</button>
+    <button onclick="RegisterPage()">Register</button>
     `;
 }
+

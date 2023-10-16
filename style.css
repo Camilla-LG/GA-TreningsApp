@@ -1,0 +1,66 @@
+.mainArea{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 10%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu div{
+    padding: 10px;
+    border: solid 1px black;
+}
+
+.menu div:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profilePic{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: solid black 1px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePic:hover{
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.nextWorkout{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.registerInputs {
+    font-size:13px;
+    margin: 2px;
+    height: 20px;
+    width: 500px;
+    border-radius:100px
+}
+.regInpCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registerSubmit {
+    width: 100px;
+    height: 25px;
+    font-size: 15px;
+    border-radius:100px;
+}
