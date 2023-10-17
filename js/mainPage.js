@@ -10,8 +10,8 @@ function mainPage(){
             <div onclick="logPage()"> Logg </div>
             <div onclick="wikiPage()"> Wiki </div>
             <div onclick="settingsPage()"> Innstillinger </div>
-            <div onclick="loginView()">Login</div>
             <div onclick="profileView()">Profile</div>
+            <div onclick="logOut()">Logout</div>
         </div>
         <div class="nextWorkout">
             <h3> Neste økt! </h3>

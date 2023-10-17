@@ -1,6 +1,4 @@
-
 function RegisterPage() {
-
   let html = /*HTML*/ `
   <h1>Register to muscleWiki</h1>
   <div class ="regInpCont"> 
@@ -24,11 +22,3 @@ function RegisterPage() {
 `;
   app.innerHTML = html;
 }
-
-//  userName: "",
-//  profileName: "",
-//  age: "",
-//  sex: "",
-//  height: "",
-//  weight: "",
-

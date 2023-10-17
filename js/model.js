@@ -27,12 +27,14 @@ const model = {
 
     //Profilen som er pålogget vil ha alle disse tingene tilgjengelig
     //Tøm dummydata før GOtime
-    loggedInUser:[{
-      userName:"test",
-      profileName: "Test Navn",
+    loggedInUser:{
+      Id: 0,
+      userName:"Test",
+      password:"ave",
+      profileName: "Testtttt",
       profileImg:"",
       homeTown: "Test Sted",
-      age: "00",
+      age: "20",
       sex:"Female",
       height:"175",
       weight:"75",
@@ -54,12 +56,17 @@ const model = {
         workout: ["squats"],
         bodypart: ["thighs","knees"]
       },],
-    }],  
+    },  
   },
 
 //Alt som blir lagt inn i input, mellomlagres her frem til lagring i data (skjer når man trykker på lagre)
   input:{
-    
+    editPass: {
+      checkIfYou:"",
+      newPassword:"",
+      confirmPass:""
+    },
+
     loginAs: {
       userName: "",
       password: "",
@@ -83,7 +90,7 @@ const model = {
   },
 
     schedule: {
-      day: ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"],
+      day: [""],
       time: [""],
       workout: [""],
       bodypart: [""],
@@ -127,9 +134,9 @@ const model = {
     //og linker til bruker med id'er
     profileList:[{
       id: 1,
-      userName: "Oliva11",
+      userName: "Oli",
       profileName: "Olivia",
-      password: "password",
+      password: "pass",
       profileImg:"",
       homeTown: "place",
       age: "00",
@@ -159,16 +166,8 @@ const model = {
 };
 
 
-
-const inputCopy ={
-    
-  loginAs: {
-    userName: "",
-    password: "",
-  },
-  
-  createUser:{
-    id:"",
+const logOutCopy= {
+    Id: 0,
     userName:"",
     profileName: "",
     profileImg:"",
@@ -178,23 +177,67 @@ const inputCopy ={
     height:"",
     weight:"",
     aboutMe: "",
-    workoutprogram:[],
-    log:[],
-    schedule:[],
-},
+    workoutprogram:[{
+      weeks:[],
+      days:[],
+      programDetails: [], 
+    },],
+    schedule:[{
+      day: [],
+      time: [],
+      workout: [],
+      bodypart: []
+    },],
+    log:[{
+      day: [],
+      time: [],
+      workout: [],
+      bodypart: []
+    },],
+}
 
-  schedule: {
-    day: ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"],
-    time: [""],
-    workout: [""],
-    bodypart: [""],
+
+const inputCopy ={
+    editPass: {
+      checkIfYou:"",
+      newPassword:"",
+      confirmPass:""
+    },
+
+    loginAs: {
+      userName: "",
+      password: "",
+    },
+    
+    createUser:{
+      id:"",
+      userName:"",
+      password: "",
+      profileName: "",
+      profileImg:"",
+      homeTown: "",
+      age: "",
+      sex:"",
+      height:"",
+      weight:"",
+      aboutMe: "",
+      workoutprogram:[],
+      log:[],
+      schedule:[],
   },
-  
-  log: {
-    time: [""],
-    workout: [""],
-    bodypart: [""],
-  },    
 
-  editProfileImg: "",
+    schedule: {
+      day: [""],
+      time: [""],
+      workout: [""],
+      bodypart: [""],
+    },
+    
+    log: {
+      time: [""],
+      workout: [""],
+      bodypart: [""],
+    },    
+
+    editProfileImg: "", 
 }

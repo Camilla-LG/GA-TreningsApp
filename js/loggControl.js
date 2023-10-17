@@ -1,5 +1,5 @@
 // function for å adde log inngang
-function Logg(){
+function loggControl(){
     const logDay = document.getElementById("logDay").value = "";
     const logTime = document.getElementById("logTime").value = "";
     const logWorkout = document.getElementById("logWorkout").value = "";
