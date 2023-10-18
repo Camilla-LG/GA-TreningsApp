@@ -5,28 +5,39 @@ function settingsPage() {
 <div onclick="mainPage()"> Main Page </div>
 
 <div class="options">
-  <select class="mode" onchange="selectModeOption()">
-    <option> Light </option>
-    <option> Dark </option>
-  </select>
-  <select class="unit" onchange="selectUnitOption()">
-    <option> Metric </option>
-    <option> Imperial </option>
-  </select>
-  <select class="dateFormat" onchange="selectDateOption()">
-    <option> DD/MM/YYYY </option>
-  </select>
-  <select class="timeFormat" onchange="selectTimeOption()">
-    <option> Time </option>
-  </select>
-  <select class="reminder" onchange="selectReminder()">
-    <option> Ja </option>
-    <option> Nei </option>
-  </select>
-  <select class="feedback" onchange="selectFeedback()">
-    <option> Ja </option>
-    <option> Nei </option>
-  </select>
+  <div class="type">
+    <a> Mode </a>
+    <a> Units </a>
+    <a> Dato visning </a>
+    <a> Tid visning </a>
+    <a> Påminnelse </a>
+    <a> Tilbakemeldinger </a>
+  </div>
+  <div class="dropdowns">
+    <select class="mode" onchange="selectModeOption()">
+      <option> Light </option>
+      <option> Dark </option>
+    </select>
+    <select class="unit" onchange="selectUnitOption()">
+      <option> Metric </option>
+      <option> Imperial </option>
+    </select>
+    <select class="dateFormat" onchange="selectDateOption()">
+      <option> DD/MM/YYYY </option>
+    </select>
+    <select class="timeFormat" onchange="selectTimeOption()">
+      <option> Time </option>
+    </select>
+    <select class="reminder" onchange="selectReminder()">
+      <option> Ja </option>
+      <option> Nei </option>
+    </select>
+    <select class="feedback" onchange="selectFeedback()">
+      <option> Ja </option>
+      <option> Nei </option>
+    </select>
+  </div>
+</div>
 
 
 <button onclick="saveSettings()"> Lagre Innstillinger </button>
