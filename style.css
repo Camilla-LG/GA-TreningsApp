@@ -1,3 +1,8 @@
+.dark{
+    background-color: black;
+    color: white;
+}
+
 .mainArea{
     display: grid;
     grid-template-columns: 1fr 2fr;

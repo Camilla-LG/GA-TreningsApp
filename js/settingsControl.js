@@ -16,3 +16,8 @@ function changePassword() {
    model.input.editPass = inputCopy.editPass;
    settingsPage()
 };
+
+function selectModeOption(){
+  let element = document.body;
+  element.classList.toggle("dark");
+}
