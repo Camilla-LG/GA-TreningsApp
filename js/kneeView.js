@@ -1,4 +1,4 @@
-function backView(){
+function kneeView(){
     document.getElementById('app').innerHTML = /*HTML*/`
     <h1>MuscleWiki</h1>
 
@@ -9,6 +9,6 @@ function backView(){
     
 
     <!-- Bilde går her -->
-    <img class="wikiBack"src=""><img>
+    <img class="wikiKnee"src=""><img>
     `;
 }
