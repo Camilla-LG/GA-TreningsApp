@@ -4,7 +4,6 @@ function settingsPage() {
 <h1> Settings </h1>
 <div onclick="mainPage()"> Main Page </div>
 
-<div> Språk </div>
 <div> Mode </div>
 <div> Enhetsverdier </div>
 <div> Date </div>

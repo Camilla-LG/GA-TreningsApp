@@ -23,7 +23,5 @@ function loggControl(){
         document.getElementById("logTime") = "";
         document.getElementById("logWorkout") = "";
         document.getElementById("logBodyPart") = "";
-
-    
     }
 }
