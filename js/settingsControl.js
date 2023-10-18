@@ -21,3 +21,14 @@ function selectModeOption(){
   let element = document.body;
   element.classList.toggle("dark");
 }
+
+function selectDateOption(value){
+  let options = {weekday: 'long', year: 'numeric', month: 'long', day:'numeric'};
+  let today = new Date();
+
+  if (value === numeric){
+    return today.toLocaleDateString();
+  } else {
+  return today.toLocaleDateString(undefined, options);
+  }
+}
