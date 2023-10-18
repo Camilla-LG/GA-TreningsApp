@@ -3,10 +3,8 @@ function profileView() {
   document.getElementById("app").innerHTML = /*HTML*/ `
     <h1>Profile</h1>
     <div id="imgDiv">Bilde vises her</div>
-    <div>Profile image:</div>
-    <input type="text" id="imgInput" value="${model.input.editProfileImg}" onchange="model.input.editProfileImg = this.value">
-    <img src="${model.app.loggedInUser.profileImg}">
-    <button onclick="setImg()">Lagre</button>
+
+    <img style="height:100px; witdh: fit-content;" src="${model.app.loggedInUser.profileImg}">
 
     <div id="usernameDiv">${model.app.loggedInUser.profileName}<div>
     
@@ -31,11 +29,12 @@ function editProfileView() {
     <h1>Profile</h1>
     <div id="imgDiv">Bilde vises her</div>
     <div>Profile image:</div>
-    <input type="text" id="imgInput">
-    <button onclick="setImg()">Lagre</button>
+    <img style="height:100px; witdh: fit-content;" src="${model.app.loggedInUser.profileImg}">
+    <input type="text" id="imgInput" value="${model.input.editProfileImg}" onchange="model.input.editProfileImg = this.value">
+    <button onclick="setImg()">Set image</button>
 
     <div id="usernameDiv"><input value="${model.app.loggedInUser.profileName}" oninput="model.app.loggedInUser.profileName = this.value"></div>
-    <div id="userAge"><input value="${model.app.loggedInUser.age}" oninput="model.app.logedInUser.age = this.value"></div>
+    <div id="userAge"><input value="${model.app.loggedInUser.age}" type="text" oninput="model.app.loggedInUser.age = this.value"></div>
     <div id="userHeight"><input value="${model.app.loggedInUser.height}" oninput="model.app.loggedInUser.height = this.value"></div>
     <div id="userWeight"><input value="${model.app.loggedInUser.weight}" oninput="model.app.loggedInUser.weight = this.value"></div>
     <div id="userBio"><input value="${model.app.loggedInUser.aboutMe}" oninput="model.app.loggedInUser.aboutMe = this.value"></div>

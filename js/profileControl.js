@@ -1,6 +1,5 @@
 function setImg() {
   model.app.loggedInUser.profileImg = model.input.editProfileImg 
-  profileView()
 }
 
 function profileEdit() {
