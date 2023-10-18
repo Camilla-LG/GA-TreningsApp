@@ -13,6 +13,7 @@ function settingsPage() {
 
 <button onclick="saveSettings()"> Lagre Innstillinger </button>
 <button onclick="editPassword()">Edit password</button>
+<button onclick="mainPage()">Main page</button>
 `;
 }
 
@@ -21,13 +22,15 @@ function editPassword(){
     <h1>Confirm its you</h1>
     <input type="password" onchange="model.input.editPass.checkIfYou = this.value">
     <button onclick="checkIfYou()">Confirm</button>
+    <button onclick="settingsPage()">Cancel</button>
     `;
-}
-
-function passwordEditPage(){
+  }
+  
+  function passwordEditPage(){
     document.getElementById('app').innerHTML = /*HTML*/`
     <input type="password" onchange="model.input.editPass.newPassword = this.value" placeholder="New password">
     <input type="password" onchange="model.input.editPass.confirmPass = this.value" placeholder="Confirm new password">
     <button onclick="changePassword()">Confirm</button>
+    <button onclick="settingsPage()">Cancel</button>
     `;
 }
