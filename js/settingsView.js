@@ -14,25 +14,26 @@ function settingsPage() {
     <a> Tilbakemeldinger </a>
   </div>
   <div class="dropdowns">
-    <select class="mode" onchange="selectModeOption()">
+    <select class="mode" name="modeSelect" onchange="selectModeOption()">
       <option> Light </option>
       <option> Dark </option>
     </select>
-    <select class="unit" onchange="selectUnitOption()">
+    <select class="unit" name="unitSelect" onchange="selectUnitOption()">
       <option> Metric </option>
       <option> Imperial </option>
     </select>
-    <select class="dateFormat" onchange="selectDateOption()">
-      <option> DD/MM/YYYY </option>
+    <select class="dateFormat" name="dateSelect" onchange="selectDateOption()">
+      <option value="numeric"> DD/MM/YYYY </option>
+      <option value="text"> Day, Month, Year </option>
     </select>
-    <select class="timeFormat" onchange="selectTimeOption()">
+    <select class="timeFormat" name="timeSelect" onchange="selectTimeOption()">
       <option> Time </option>
     </select>
-    <select class="reminder" onchange="selectReminder()">
+    <select class="reminder" name="reminderSelect" onchange="selectReminder()">
       <option> Ja </option>
       <option> Nei </option>
     </select>
-    <select class="feedback" onchange="selectFeedback()">
+    <select class="feedback" name="feedbackSelect" onchange="selectFeedback()">
       <option> Ja </option>
       <option> Nei </option>
     </select>

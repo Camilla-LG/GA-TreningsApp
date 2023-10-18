@@ -7,7 +7,7 @@ function wikiPage(){
     <div class="arm"id="armDiv" onclick="armView()">arm</div>
     <div class="chest"id="chestDiv" onclick="chestView()">chest</div>
     <div class="stomach"id="stomachDiv"onclick="stomachView()">stomach</div>
-    <div class="back"id="backDiv"onclick="backView()">back</div>
+    <div class="knee"id="backDiv"onclick="kneeView()">knee</div>
     <div class="leg"id="legDiv"onclick="legView()">leg</div>
 
     <!-- placeholder bilde -->
