@@ -2,8 +2,6 @@
 function profileView() {
   document.getElementById("app").innerHTML = /*HTML*/ `
     <h1>Profile</h1>
-    <div id="imgDiv">Bilde vises her</div>
-
     <img style="height:100px; witdh: fit-content;" src="${model.app.loggedInUser.profileImg}">
 
     <div id="usernameDiv">${model.app.loggedInUser.profileName}<div>
@@ -27,11 +25,13 @@ function profileView() {
 function editProfileView() {
   document.getElementById("app").innerHTML = /*HTML*/ `
     <h1>Profile</h1>
-    <div id="imgDiv">Bilde vises her</div>
     <div>Profile image:</div>
-    <img style="height:100px; witdh: fit-content;" src="${model.app.loggedInUser.profileImg}">
     <input type="text" id="imgInput" value="${model.input.editProfileImg}" onchange="model.input.editProfileImg = this.value">
     <button onclick="setImg()">Set image</button>
+    <br>
+    <div>
+    <img style="height:100px; witdh: fit-content;" src="${model.app.loggedInUser.profileImg}">
+    </div>
 
     <div id="usernameDiv"><input value="${model.app.loggedInUser.profileName}" oninput="model.app.loggedInUser.profileName = this.value"></div>
     <div id="userAge"><input value="${model.app.loggedInUser.age}" type="text" oninput="model.app.loggedInUser.age = this.value"></div>
