@@ -6,7 +6,7 @@ function mainPage(){
     <div onclick="profileView()" class="profilePic" ><img style="width:180px; height:fit-content;" src="${model.app.loggedInUser.profileImg}" alt="No img"></div>
     <div class="mainArea">
         <div class="menu">
-            <div onclick="scheduleWiew()"> Treningsplan </div>
+            <div onclick="scheduleView()"> Treningsplan </div>
             <div onclick="logPage()"> Logg </div>
             <div onclick="wikiPage()"> Wiki </div>
             <div onclick="settingsPage()"> Innstillinger </div>
