@@ -1,21 +1,21 @@
 const model = {
   app: {
     //innstillinger som gjelder generelt for hele nettsiden
-    genOpt :{
-        lang: 'en',
-        darkMode: false,
-        metric: true,
-        kg: true,
-        dateFormat: 'DD/MM/YYYY',
-        timeFormat: '24',
-        challengeReminder:{
-            on: true, interval: '16.30', days:'M/T/F/S'
-        },
-        workoutPlanReminder: 'all',
-        feedback: true
+    genOpt: {
+      lang: 'en',
+      darkMode: false,
+      metric: true,
+      kg: true,
+      dateFormat: 'DD/MM/YYYY',
+      timeFormat: '24',
+      challengeReminder: {
+        on: true, interval: '16.30', days: 'M/T/F/S'
+      },
+      workoutPlanReminder: 'all',
+      feedback: true
     },
 
-    pages:[
+    pages: [
       "loginPage",
       "mainPage",
       "Profile",
@@ -27,67 +27,78 @@ const model = {
 
     //Profilen som er pålogget vil ha alle disse tingene tilgjengelig
     //Tøm dummydata før GOtime
-    loggedInUser:{
+    loggedInUser: {
       Id: 0,
-      userName:"Test",
-      password:"ave",
+      userName: "Test",
+      password: "ave",
       profileName: "Testtttt",
-      profileImg:"",
+      profileImg: "",
       homeTown: "Test Sted",
       age: "20",
-      sex:"Female",
-      height:"175",
-      weight:"75",
+      sex: "Female",
+      height: "175",
+      weight: "75",
       aboutMe: "info",
-      workoutprogram:[{
-        weeks:["one","two","three","four"],
-        days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"],
-        programDetails: ["fullbody","chest","shoulders"], 
+      workoutprogram: [{
+        weeks: ["one", "two", "three", "four"],
+        days: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+        programDetails: ["fullbody", "chest", "shoulders"],
       },],
-      schedule:[{
-        day: ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"],
+      schedule: [{
+        day: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
         time: ["12:00"],
         workout: ["squats"],
-        bodypart: ["thighs","knees"]
+        bodypart: ["thighs", "knees"]
       },],
-      log:[{
-        day: ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"],
+      currentWeek: 1,
+      log: [{
+        week: 1,
+        day: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
         time: ["12:00"],
         workout: ["squats"],
-        bodypart: ["thighs","knees"]
-      },],
-    },  
+        bodypart: ["thighs", "knees"]
+      },
+      {
+        week: 2,
+        day: ["monday", "tuesday", "wednesday"],
+        time: ["15:00"],
+        workout: ["pushups"],
+        bodypart: ["arms", "chest"]
+      },
+      ],
+    },
   },
 
-//Alt som blir lagt inn i input, mellomlagres her frem til lagring i data (skjer når man trykker på lagre)
-  input:{
+  //Alt som blir lagt inn i input, mellomlagres her frem til lagring i data (skjer når man trykker på lagre)
+  input: {
     editPass: {
-      checkIfYou:"",
-      newPassword:"",
-      confirmPass:""
+      checkIfYou: "",
+      newPassword: "",
+      confirmPass: ""
     },
 
     loginAs: {
       userName: "",
       password: "",
     },
-    
-    createUser:{
-      id:"",
-      userName:"",
+
+    createUser: {
+      id: null,
+      userName: "",
       password: "",
       profileName: "",
-      profileImg:"",
+      profileImg: "",
       homeTown: "",
       age: "",
-      sex:"",
-      height:"",
-      weight:"",
+      sex: "",
+      height: "",
+      weight: "",
       aboutMe: "",
-      workoutprogram:[],
-      log:[],
-      schedule:[],
-  },
+      workoutprogram: [],
+      currentWeek: null,
+      log: [],
+      schedule: [],
+    },
 
     schedule: {
       day: [""],
@@ -95,149 +106,160 @@ const model = {
       workout: [""],
       bodypart: [""],
     },
-    
+
     log: {
+      week: 1,
       time: [""],
       workout: [""],
       bodypart: [""],
-    },    
+    },
 
     editProfileImg: "",
-}, 
+  },
 
-//Her blir alle data fra input lagret permanent til evt sletting
-  data:{
+  //Her blir alle data fra input lagret permanent til evt sletting
+  data: {
     workouts: ["squats",],
 
     workoutWiki: {
-      squats: [{ id: '123',
-          workout: "squats",
-          video: "",
-          text: ""},],
-      pushup: [{ id: '1234',
-          workout: "pushup",
-          video: "",
-          text: ""},],
+      squats: [{
+        id: '123',
+        workout: "squats",
+        video: "",
+        text: ""
+      },],
+      pushup: [{
+        id: '1234',
+        workout: "pushup",
+        video: "",
+        text: ""
+      },],
     },
 
-    programDetails:{
-      fullbody:["chest","triceps","legs","shoulders","traps","abs","back","biceps"],
+    programDetails: {
+      fullbody: ["chest", "triceps", "legs", "shoulders", "traps", "abs", "back", "biceps"],
       chest: ["chest"],
-      shoulder:["shoulders","traps"],
-      arms:["triceps","biceps","forearm"],
-      back:["upper back","lower back"],
-      legs:["lower legs","upper legs"],
-      ab:["abs"],
+      shoulder: ["shoulders", "traps"],
+      arms: ["triceps", "biceps", "forearm"],
+      back: ["upper back", "lower back"],
+      legs: ["lower legs", "upper legs"],
+      ab: ["abs"],
     },
 
     //WP, schedule, log ligger lagret på hver bruker. Mulig vi gjør det om til lister etter hvert
     //og linker til bruker med id'er
-    profileList:[{
+    profileList: [{
       id: 1,
       userName: "Oli",
       profileName: "Olivia",
       password: "pass",
-      profileImg:"",
+      profileImg: "",
       homeTown: "place",
       age: "00",
-      sex:"Female",
-      height:"175",
-      weight:"75",
+      sex: "Female",
+      height: "175",
+      weight: "75",
       aboutMe: "info",
-      workoutprogram:[{
-        weeks:["one","two","three","four"],
-        days:["monday","tuesday","wednesday","thursday","friday","saturday","sunday"],
-        programDetails: ["fullbody","chest","shoulders"], 
+      workoutprogram: [{
+        week: 1,
+        weeks: ["one", "two", "three", "four"],
+        days: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
+        programDetails: ["fullbody", "chest", "shoulders"],
       },],
-      schedule:[{
-        day: ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"],
+      schedule: [{
+        day: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
         time: ["12:00"],
         workout: ["squats"],
-        bodypart: ["thighs","knees"]
+        bodypart: ["thighs", "knees"]
       },],
-      log:[{
-        day: ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"],
+      currentWeek: 1,
+      log: [{
+        week: 1,
+        day: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
         time: ["12:00"],
         workout: ["squats"],
-        bodypart: ["thighs","knees"]
+        bodypart: ["thighs", "knees"]
       },],
     },],
   },
 };
 
 
-const logOutCopy= {
-    Id: 0,
-    userName:"",
-    profileName: "",
-    profileImg:"",
-    homeTown: "",
-    age: "",
-    sex:"",
-    height:"",
-    weight:"",
-    aboutMe: "",
-    workoutprogram:[{
-      weeks:[],
-      days:[],
-      programDetails: [], 
-    },],
-    schedule:[{
-      day: [],
-      time: [],
-      workout: [],
-      bodypart: []
-    },],
-    log:[{
-      day: [],
-      time: [],
-      workout: [],
-      bodypart: []
-    },],
+const logOutCopy = {
+  Id: 0,
+  userName: "",
+  profileName: "",
+  profileImg: "",
+  homeTown: "",
+  age: "",
+  sex: "",
+  height: "",
+  weight: "",
+  aboutMe: "",
+  workoutprogram: [{
+    weeks: [],
+    days: [],
+    programDetails: [],
+  },],
+  schedule: [{
+    day: [],
+    time: [],
+    workout: [],
+    bodypart: []
+  },],
+  currentWeek: null,
+  log: [{
+    week: 1,
+    day: [],
+    time: [],
+    workout: [],
+    bodypart: []
+  },],
 }
 
 
-const inputCopy ={
-    editPass: {
-      checkIfYou:"",
-      newPassword:"",
-      confirmPass:""
-    },
-
-    loginAs: {
-      userName: "",
-      password: "",
-    },
-    
-    createUser:{
-      id:"",
-      userName:"",
-      password: "",
-      profileName: "",
-      profileImg:"",
-      homeTown: "",
-      age: "",
-      sex:"",
-      height:"",
-      weight:"",
-      aboutMe: "",
-      workoutprogram:[],
-      log:[],
-      schedule:[],
+const inputCopy = {
+  editPass: {
+    checkIfYou: "",
+    newPassword: "",
+    confirmPass: ""
   },
 
-    schedule: {
-      day: [""],
-      time: [""],
-      workout: [""],
-      bodypart: [""],
-    },
-    
-    log: {
-      time: [""],
-      workout: [""],
-      bodypart: [""],
-    },    
+  loginAs: {
+    userName: "",
+    password: "",
+  },
 
-    editProfileImg: "", 
+  createUser: {
+    id: "",
+    userName: "",
+    password: "",
+    profileName: "",
+    profileImg: "",
+    homeTown: "",
+    age: "",
+    sex: "",
+    height: "",
+    weight: "",
+    aboutMe: "",
+    workoutprogram: [],
+    log: [],
+    schedule: [],
+  },
+
+  schedule: {
+    day: [""],
+    time: [""],
+    workout: [""],
+    bodypart: [""],
+  },
+  currentWeek: 1,
+  log: {
+    week: 1,
+    time: [""],
+    workout: [""],
+    bodypart: [""],
+  },
+
+  editProfileImg: "",
 }

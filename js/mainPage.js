@@ -7,7 +7,7 @@ function mainPage(){
     <div class="mainArea">
         <div class="menu">
             <div onclick="scheduleView()"> Treningsplan </div>
-            <div onclick="logPage()"> Logg </div>
+            <div onclick="loggView()"> Logg </div>
             <div onclick="wikiPage()"> Wiki </div>
             <div onclick="settingsPage()"> Innstillinger </div>
             <div onclick="profileView()">Profile</div>
