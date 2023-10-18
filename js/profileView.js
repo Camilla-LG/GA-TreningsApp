@@ -4,7 +4,8 @@ function profileView() {
     <h1>Profile</h1>
     <div id="imgDiv">Bilde vises her</div>
     <div>Profile image:</div>
-    <input type="text" id="imgInput">
+    <input type="text" id="imgInput" value="${model.input.editProfileImg}" onchange="model.input.editProfileImg = this.value">
+    <img src="${model.app.loggedInUser.profileImg}">
     <button onclick="setImg()">Lagre</button>
 
     <div id="usernameDiv">${model.app.loggedInUser.profileName}<div>

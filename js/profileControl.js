@@ -1,11 +1,6 @@
 function setImg() {
-const imageUrl = model.input.createUser.userImg;
-let imageHtml = '';
-    if (imageUrl != null) {
-        imageHtml = `<img src="${imageUrl}" style="width: 50px; height: 50px;"/>`;
-    }
-    
-    profileView()
+  model.app.loggedInUser.profileImg = model.input.editProfileImg 
+  
 }
 
 function profileEdit() {
