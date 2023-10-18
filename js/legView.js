@@ -1,4 +1,4 @@
-function shoulderView(){
+function legView(){
     document.getElementById('app').innerHTML = /*HTML*/`
     <h1>MuscleWiki</h1>
 
@@ -6,9 +6,9 @@ function shoulderView(){
 
     <div>Informasjon om kroppsdel og treningsforslag</div>
     <div>videolink</div>
+    
 
-
-    <!-- placeholder bilde -->
-    <img class="wikiShoulder"src="https://www.shoulder-pain-explained.com/images/shoulder-bones-anatomy.png"><img>
+    <!-- Bilde går her -->
+    <img class="wikiLeg"src=""><img>
     `;
 }
