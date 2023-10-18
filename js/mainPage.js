@@ -3,7 +3,7 @@ function mainPage(){
     document.getElementById('app').innerHTML = /*HTML*/`
     
     <h1> Main Page </h1>
-    <div onclick="profileView()" class="profilePic"> Profile Pic </div>
+    <div onclick="profileView()" class="profilePic" ><img style="width:180px; height:fit-content;" src="${model.app.loggedInUser.profileImg}" alt="No img"></div>
     <div class="mainArea">
         <div class="menu">
             <div onclick="scheduleWiew()"> Treningsplan </div>

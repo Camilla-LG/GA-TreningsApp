@@ -30,6 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .profilePic:hover{
@@ -63,4 +64,8 @@ h1{
     height: 25px;
     font-size: 15px;
     border-radius:100px;
+}
+
+.wikiBody {
+margin-left: 39.5%;
 }

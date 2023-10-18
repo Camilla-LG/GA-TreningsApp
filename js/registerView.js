@@ -17,6 +17,7 @@ function RegisterPage() {
     <input class="registerInputs" type="text" placeholder="Weight/KG" onchange="model.input.createUser.weight = this.value">
     <br>
     <button class="registerSubmit" onclick="pushNewUser()">Submit</button>
+    <button class="registerSubmit" onclick="loginView()">Cancel</button>
   </div>
  
 `;
