@@ -1,39 +1,56 @@
-// scheduleWiew();
-function scheduleWiew(){
-    document.getElementById('app').innerHTML = /*HTML*/`
-    <h2>Dagens timeplan</h2>
-    <table>
-        <tr>
-            <th>tidspunkt</th>
-            <th>Aktivitet</th>
-        </tr>
-        <tr>
-            <td>08:00 - 09:00</td>
-            <td>Morgenmøte</td>
-        </tr>
-        <tr>
-            <td>09:30 - 11:00</td>
-            <td>Arbeid til prosjekt</td>
-        </tr>
-    </table>
+const tasks = [];
 
-    <h2>Legg til oppgave</h2>
-    <input type="text" id="taskInput" placeHolder="Skriv inn oppgave">
-    <button onclick="addTask()">Legg til oppgave</button>
-    <ul id="taskList"></ul>
+function scheduleView() {
+    document.getElementById('app').innerHTML = `
+        <h2>Dagens timeplan</h2>
+        <table>
+            <tr>
+                <th>Tidspunkt</th>
+                <th>Aktivitet</th>
+            </tr>
+        </table>
+
+        <h2>Legg til oppgave</h2>
+        <input type="text" id="taskInput" placeholder="Skriv inn oppgave">
+        <input type="time" id="taskTime"> <!-- Legg til tidspunkt-input -->
+        <button onclick="addTask()">Legg til oppgave</button>
+        <ul id="taskList"></ul>
     `;
 }
 
-function addTask(){
+function addTask() {
     const taskInput = document.getElementById('taskInput');
-    const taskList = document.getElementById('tasklist');
+    const taskTime = document.getElementById('taskTime');
+    const taskList = document.getElementById('taskList');
 
-    if (taskInput.value.trim() === ''){
-        alert('Oppgaven kan ikke være tom');
+    if (taskInput.value.trim() === '' || taskTime.value === '') {
+        alert('Oppgaven og tidspunktet kan ikke være tomme');
         return;
     }
-    const task = document.createElement('li');
-    task.textContent = textInput.value;
-    taskList.appendChild(task);
+
+    const task = {
+        text: taskInput.value,
+        time: taskTime.value,
+    };
+
+    tasks.push(task);
     taskInput.value = '';
+    taskTime.value = '';
+    updateTaskList();
 }
+
+function updateTaskList() {
+    const taskTable = document.querySelector('table');
+    
+    tasks.forEach(task => {
+        const newRow = taskTable.insertRow(-1); 
+        const timeCell = newRow.insertCell(0);
+        const activityCell = newRow.insertCell(1);
+
+        timeCell.textContent = task.time;
+        activityCell.textContent = task.text;
+    });
+}
+
+scheduleView();
+
