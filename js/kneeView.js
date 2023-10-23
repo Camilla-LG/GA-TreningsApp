@@ -4,7 +4,7 @@ function kneeView(){
 
     <button onclick="wikiPage()">X</button>
 
-    <div>Informasjon om kroppsdel og treningsforslag</div>
+    <div> Informasjon om knær og treningsforslag</div>
     <div>videolink</div>
     
 

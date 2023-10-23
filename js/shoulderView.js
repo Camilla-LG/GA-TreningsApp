@@ -4,7 +4,7 @@ function shoulderView(){
 
     <button onclick="wikiPage()">X</button>
 
-    <div>Informasjon om kroppsdel og treningsforslag</div>
+    <div>Informasjon om skulder og treningsforslag</div>
     <div>videolink</div>
 
 

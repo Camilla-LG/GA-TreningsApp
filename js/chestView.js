@@ -4,7 +4,7 @@ function chestView(){
 
     <button onclick="wikiPage()">X</button>
 
-    <div>Informasjon om kroppsdel og treningsforslag</div>
+    <div>Informasjon om bryst og treningsforslag</div>
     <div>videolink</div>
     
 

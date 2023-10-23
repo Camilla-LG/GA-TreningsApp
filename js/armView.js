@@ -4,7 +4,7 @@ function armView(){
 
     <button onclick="wikiPage()">X</button>
 
-    <div>Informasjon om kroppsdel og treningsforslag</div>
+    <div>Informasjon om armer og treningsforslag</div>
     <div>videolink</div>
     
 

@@ -13,10 +13,11 @@ function wikiPage(){
     <div class="rightArm"id="armDiv" onclick="armView()">arm</div>
     <div class="chest"id="chestDiv" onclick="chestView()">chest</div>
     <div class="stomach"id="stomachDiv"onclick="stomachView()">stomach</div>
-    <div class="knee"id="backDiv"onclick="kneeView()">knee</div>
-    <div class="leg"id="legDiv"onclick="legView()">leg</div>
+    <div class="leftKnee"id="kneeDiv"onclick="kneeView()">knee</div>
+    <div class="rightKnee"id="kneeDiv"onclick="kneeView()">knee</div>
+    <div class="leftLeg"id="legDiv"onclick="legView()">leg</div>
+    <div class="rightLeg"id="legDiv"onclick="legView()">leg</div>
     </div>
 
     `;
 }
-

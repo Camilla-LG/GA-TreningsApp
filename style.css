@@ -90,7 +90,7 @@ h1{
 }
 
 
-/* wikiView */
+/* wikiView */ 
 .image-container {
     position: relative;
     width: 500px; 
@@ -104,7 +104,8 @@ h1{
     position: absolute;
     width: 50px; 
     height: 50px;
-    border: solid; 
+    color: transparent; 
+    /* border: solid red; */ 
     bottom: 8%;
     left: 18%;
   }
@@ -112,7 +113,8 @@ h1{
     position: absolute;
     width: 50px; 
     height: 50px;
-    border: solid; 
+    color: transparent; 
+    /* border: solid red; */ 
     bottom: 8%;
     left: 48%;
   }
@@ -120,7 +122,8 @@ h1{
     position: absolute;
     width: 50px; 
     height: 250px;
-    border: solid red;
+    color: transparent; 
+    /* border: solid red; */ 
     top: 90%;
     left: 12%; 
   }
@@ -128,7 +131,64 @@ h1{
     position: absolute;
     width: 50px; 
     height: 250px;
-    border: solid red;
+    color: transparent; 
+    /* border: solid red; */ 
     top: 90%;
     left: 54%; 
   }
+  .chest {
+    position: absolute;
+    width: 100px; 
+    height: 80px;
+    color: transparent; 
+    /* border: solid red; */ 
+    top: 72%;
+    left: 28%; 
+  }
+  .stomach {
+    position: absolute;
+    width: 130px; 
+    height: 120px;
+    color: transparent; 
+    /* border: solid red; */ 
+    top: 100%;
+    left: 25%; 
+  } 
+.leftLeg {
+    position: absolute;
+    width: 55px; 
+    height: 350px;
+    color: transparent; 
+    /* border: solid red; */ 
+    top: 150%;
+    left: 25%; 
+}
+.rightLeg {
+    position: absolute;
+    width: 55px; 
+    height: 350px;
+    color: transparent; 
+    /* border: solid red; */ 
+    top: 150%;
+    left: 40%; 
+}
+.leftKnee {
+    position: absolute;
+    width: 50px; 
+    height: 50px;
+    color: transparent; 
+  /* border: solid red; */ 
+    top: 200%;
+    left: 25%;
+    z-index: 1;
+}
+.rightKnee {
+    position: absolute;
+    width: 50px; 
+    height: 50px;
+    color: transparent; 
+    /* border: solid red; */ 
+    top: 200%;
+    left: 40%;
+    z-index: 1;
+} 
