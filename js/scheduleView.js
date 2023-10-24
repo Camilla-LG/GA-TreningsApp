@@ -52,5 +52,5 @@ function updateTaskList() {
     });
 }
 
-scheduleView();
+// scheduleView();
 
