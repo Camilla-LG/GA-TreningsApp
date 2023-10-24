@@ -192,3 +192,49 @@ h1{
     left: 40%;
     z-index: 1;
 } 
+
+.image-containerWiki {
+    position: relative;
+    width: 500px; 
+    height: 300px;
+    left: 20%;
+  }
+.wikiShoulder{
+    position:absolute;
+    left: 185%;
+    bottom:-10%;
+}
+.wikiMenuButton{
+    position:absolute;
+    right: 50%;
+    top: 20%;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    border-color:blanchedalmond;
+    background-color: lightsteelblue;
+}
+.videoDisplay{
+position: absolute;
+top: 120%;
+left: 50%;
+}
+.treningsInfo{
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    width: 200%;
+}
+/* Disse skal se ut som piler*/
+.prevArrow{ 
+    position: absolute;
+    border: solid;
+    top: 200%;
+    left: 25%;
+}
+.nextArrow{
+    position: absolute;
+    border: solid;
+    top: 200%;
+    left: 200%;
+}
