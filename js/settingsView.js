@@ -26,8 +26,9 @@ function settingsPage() {
       <option value="numeric"> DD/MM/YYYY </option>
       <option value="text"> Day, Month, Year </option>  
     </select>
-    <select class="timeFormat" name="timeSelect" onchange="selectTimeOption()">
-    <option> Time </option>
+    <select id="timeFormat" name="timeSelect" onchange="selectTimeOption()">
+    <option value="12hr"> AM/PM </option>
+    <option value="24hr"> 24 Timer </option>
     </select>
     <select class="reminder" name="reminderSelect" onchange="selectReminder()">
     <option> Ja </option>
@@ -46,6 +47,8 @@ function settingsPage() {
     <button onclick="mainPage()">Main page</button>
     
     <div id='outputDate'></div>
+    <div id='time'></div>
+    <div id='outputTime'></div>
     `;
 }
 

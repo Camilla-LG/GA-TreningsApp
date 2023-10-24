@@ -38,3 +38,20 @@ function selectDateOption(){
 }
 
 document.getElementById("dateFormat").addEventListener("change", selectDateOption);
+
+function selectTimeOption(){
+  let timeFormat = document.getElementById("timeFormat");
+  let selectedFormat = timeFormat.value;
+  let currentTime = new Date();
+  let chosenTimeFormat = "";
+  
+  if (selectedFormat === "12hr"){
+    chosenTimeFormat = currentTime.toLocaleString('nb-NO', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
+  } else if (selectedFormat === "24hr"){
+    chosenTimeFormat = currentTime.toLocaleString('nb-NO', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false});
+  }
+  document.getElementById('outputTime').textContent = chosenTimeFormat;
+}
+
+document.getElementById('timeFormat').addEventListener("change", selectTimeOption);
+selectTimeOption();
