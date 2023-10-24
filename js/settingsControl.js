@@ -22,13 +22,19 @@ function selectModeOption(){
   element.classList.toggle("dark");
 }
 
-function selectDateOption(value){
+function selectDateOption(){
+  let dateFormat = document.getElementById("dateFormat");
+  let selectedFormat = dateFormat.value;
   let options = {weekday: 'long', year: 'numeric', month: 'long', day:'numeric'};
   let today = new Date();
+  let chosenDateFormat = "";
 
-  if (value === numeric){
-    return today.toLocaleDateString();
-  } else {
-  return today.toLocaleDateString(undefined, options);
+  if (selectedFormat === "numeric"){
+    chosenDateFormat = today.toLocaleDateString();
+  } else if (selectedFormat === "text"){
+    chosenDateFormat = today.toLocaleDateString(undefined, options);
   }
+  document.getElementById('outputDate').textContent = chosenDateFormat;
 }
+
+document.getElementById("dateFormat").addEventListener("change", selectDateOption);

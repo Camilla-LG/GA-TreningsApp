@@ -22,29 +22,31 @@ function settingsPage() {
       <option> Metric </option>
       <option> Imperial </option>
     </select>
-    <select class="dateFormat" name="dateSelect" onchange="selectDateOption()">
+    <select id="dateFormat" name="dateSelect"  onchange="selectDateOption()">
       <option value="numeric"> DD/MM/YYYY </option>
-      <option value="text"> Day, Month, Year </option>
+      <option value="text"> Day, Month, Year </option>  
     </select>
     <select class="timeFormat" name="timeSelect" onchange="selectTimeOption()">
-      <option> Time </option>
+    <option> Time </option>
     </select>
     <select class="reminder" name="reminderSelect" onchange="selectReminder()">
-      <option> Ja </option>
-      <option> Nei </option>
+    <option> Ja </option>
+    <option> Nei </option>
     </select>
     <select class="feedback" name="feedbackSelect" onchange="selectFeedback()">
-      <option> Ja </option>
-      <option> Nei </option>
+    <option> Ja </option>
+    <option> Nei </option>
     </select>
-  </div>
-</div>
-
-
-<button onclick="saveSettings()"> Lagre Innstillinger </button>
-<button onclick="editPassword()">Edit password</button>
-<button onclick="mainPage()">Main page</button>
-`;
+    </div>
+    </div>
+    
+    
+    <button onclick="saveSettings()"> Lagre Innstillinger </button>
+    <button onclick="editPassword()">Edit password</button>
+    <button onclick="mainPage()">Main page</button>
+    
+    <div id='outputDate'></div>
+    `;
 }
 
 function editPassword(){
