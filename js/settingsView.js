@@ -18,9 +18,9 @@ function settingsPage() {
       <option> Light </option>
       <option> Dark </option>
     </select>
-    <select class="unit" name="unitSelect" onchange="selectUnitOption()">
-      <option> Metric </option>
-      <option> Imperial </option>
+    <select id="unit" name="unitSelect" onchange="selectUnitOption()">
+      <option value="metric"> Metric </option>
+      <option value="imperial"> Imperial </option>
     </select>
     <select id="dateFormat" name="dateSelect"  onchange="selectDateOption()">
       <option value="numeric"> DD/MM/YYYY </option>
@@ -30,11 +30,11 @@ function settingsPage() {
     <option value="12hr"> AM/PM </option>
     <option value="24hr"> 24 Timer </option>
     </select>
-    <select class="reminder" name="reminderSelect" onchange="selectReminder()">
+    <select id="reminder" name="reminderSelect" onchange="selectReminder()">
     <option> Ja </option>
     <option> Nei </option>
     </select>
-    <select class="feedback" name="feedbackSelect" onchange="selectFeedback()">
+    <select id="feedback" name="feedbackSelect" onchange="selectFeedback()">
     <option> Ja </option>
     <option> Nei </option>
     </select>
@@ -46,6 +46,8 @@ function settingsPage() {
     <button onclick="editPassword()">Edit password</button>
     <button onclick="mainPage()">Main page</button>
     
+    <div class='outputUnit' id="height"></div>
+    <div class='outputUnit' id="weight"></div>
     <div id='outputDate'></div>
     <div id='outputTime'></div>
     `;
