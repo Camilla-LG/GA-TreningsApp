@@ -78,5 +78,10 @@ function selectTimeOption(){
     chosenTimeFormat = currentTime.toLocaleString('nb-NO', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false});
   }
   document.getElementById('outputTime').textContent = chosenTimeFormat;
-  setInterval(selectTimeOption, 1000);
 }
+setInterval(selectTimeOption, 1000);
+
+
+
+
+
