@@ -222,19 +222,29 @@ left: 50%;
 .treningsInfo{
     position: absolute;
     left: 50%;
-    bottom: -10%;
-    width: 200%;
+    bottom: 0px;
+    width: 140%;
 }
-/* Disse skal se ut som piler*/
+
 .prevArrow{ 
     position: absolute;
-    border: solid;
-    top: 200%;
-    left: 25%;
+    width: 0;
+      height: 0;
+      border-left: 20px solid transparent; 
+      border-right: 20px solid transparent; 
+      border-bottom: 40px solid greenyellow; 
+      transform: rotate(-90deg); 
+      bottom: -300px;
+      left: 140px;
 }
 .nextArrow{
     position: absolute;
-    border: solid;
-    top: 200%;
-    left: 200%;
+    width: 0;
+      height: 0;
+      border-left: 20px solid transparent; 
+      border-right: 20px solid transparent; 
+      border-bottom: 40px solid greenyellow; 
+      transform: rotate(90deg); 
+      bottom: -300px;
+      left: 950px;
 }
