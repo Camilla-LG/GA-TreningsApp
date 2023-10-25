@@ -156,48 +156,53 @@ select {
   }
   .leftShoulder {
     position: absolute;
-    width: 50px; 
-    height: 50px;
-    color: transparent; 
-    /* border: solid red; */ 
-    bottom: 8%;
-    left: 18%;
+    width: 60px; 
+    height: 65px;
+    color: transparent;
+  /*  border: solid red;  */
+    bottom: 30%;
+    left: -52%;
+    transform: rotate(4deg);
   }
   .rightShoulder {
     position: absolute;
-    width: 50px; 
-    height: 50px;
-    color: transparent; 
-    /* border: solid red; */ 
-    bottom: 8%;
-    left: 48%;
+    width: 60px; 
+    height: 65px;
+    color: transparent;
+  /*  border: solid red; */ 
+    bottom: 30%;
+    left: -10%;
+    transform: rotate(-3deg);
   }
   .leftArm {
     position: absolute;
-    width: 50px; 
+    width: 70px; 
     height: 250px;
     color: transparent; 
-    /* border: solid red; */ 
-    top: 90%;
-    left: 12%; 
+   /*  border: solid red; */
+     bottom: -55%;
+     left: -57%;
+     transform: rotate(4deg);
   }
   .rightArm {
     position: absolute;
-    width: 50px; 
+    width: 55px; 
     height: 250px;
     color: transparent; 
-    /* border: solid red; */ 
-    top: 90%;
-    left: 54%; 
+   /*  border: solid red; */
+     bottom: -55%;
+     left: -5.4%;
+    transform: rotate(-4deg);
   }
   .chest {
     position: absolute;
-    width: 100px; 
-    height: 80px;
+    width: 143px; 
+    height: 90px;
     color: transparent; 
-    /* border: solid red; */ 
-    top: 72%;
-    left: 28%; 
+   /* border: solid red; */
+    bottom: 20%;
+    left: -40%;
+    transform: rotate(-2deg);
   }
   .stomach {
     position: absolute;
