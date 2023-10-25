@@ -3,11 +3,10 @@ const model = {
     //innstillinger som gjelder generelt for hele nettsiden
     genOpt: {
       lang: 'en',
-      darkMode: false,
-      metric: true,
-      kg: true,
-      dateFormat: 'DD/MM/YYYY',
-      timeFormat: '24',
+      mode: ['dark', 'light'],
+      unit: ['metric', 'imperial'],
+      dateFormat: ['DD/MM/YYYY', 'Day, Month, Year'],
+      timeFormat: ['12','24'],
       challengeReminder: {
         on: true, interval: '16.30', days: 'M/T/F/S'
       },

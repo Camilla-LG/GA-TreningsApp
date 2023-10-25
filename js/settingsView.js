@@ -47,7 +47,6 @@ function settingsPage() {
     <button onclick="mainPage()">Main page</button>
     
     <div id='outputDate'></div>
-    <div id='time'></div>
     <div id='outputTime'></div>
     `;
 }
