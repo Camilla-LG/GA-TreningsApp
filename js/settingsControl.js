@@ -17,10 +17,39 @@ function changePassword() {
    settingsPage()
 };
 
+
+//Denne funksjonen switcher mellom lys og mørk mode
+
 function selectModeOption(){
   let element = document.body;
   element.classList.toggle("dark");
 }
+
+
+//Med denne funksjonen, velger du mellom metric og imperial enhetssystem, det er 
+//lagt til eventListener utenfor funksjonen slik at den alltid sjekker om
+//man endrer valg i dropdown menyen
+
+function selectUnitOption() {
+  let unitFormat = document.getElementById("unit");
+  let weight = document.getElementById("weight");
+  let height = document.getElementById("height");
+  let selectedFormat = unitFormat.value;
+
+  if (selectedFormat === "metric") {
+      weight.textContent = "Kg";
+      height.textContent = "Cm";
+  } else if (selectedFormat === "imperial") {
+      weight.textContent = "Lbs";
+      height.textContent = "Ft";
+    }
+}
+document.getElementById("unit").addEventListener("change", selectUnitOption);
+
+
+//Med denne funksjonen, velger du hvordan du ønsker at datoen skal vises, det er 
+//lagt til eventListener utenfor funksjonen slik at den alltid sjekker om
+//man endrer valg i dropdown menyen
 
 function selectDateOption(){
   let dateFormat = document.getElementById("dateFormat");
@@ -36,8 +65,12 @@ function selectDateOption(){
   }
   document.getElementById('outputDate').textContent = chosenDateFormat;
 }
-
 document.getElementById("dateFormat").addEventListener("change", selectDateOption);
+
+
+//Med denne funksjonen, velger du hvordan du ønsker at klokken skal vises, det er 
+//lagt til eventListener utenfor funksjonen slik at den alltid sjekker om
+//man endrer valg i dropdown menyen
 
 function selectTimeOption(){
   let timeFormat = document.getElementById("timeFormat");
@@ -52,6 +85,5 @@ function selectTimeOption(){
   }
   document.getElementById('outputTime').textContent = chosenTimeFormat;
 }
-
 document.getElementById('timeFormat').addEventListener("change", selectTimeOption);
 selectTimeOption();
