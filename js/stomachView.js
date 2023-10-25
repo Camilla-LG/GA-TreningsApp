@@ -8,7 +8,7 @@ function stomachView(){
     <div class="treningsInfo">Stomach <p> Mageøvelse går her
      </div>
     
-    <iframe class="videoDisplay" width="632" height="355.5" src="https://www.youtube.com/embed/cBSD6mQIPQk" title="Dumbbell Bicep Curl | Nuffield Health" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     <iframe class="videoDisplay" width="632" height="355.5" src="https://www.youtube.com/embed/RKqb61-zTyY" title="Best 7 ABS Exercises For SIX PACK - Gym Body Motivation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <div class="prevArrow" id="prevArrow"></div>
     <div class="nextArrow" id="nextArrow"></div>
