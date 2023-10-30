@@ -10,7 +10,7 @@ function profileView() {
     <div id="userSex">${model.app.loggedInUser.sex}</div>
     <div id="userHeight">${model.app.loggedInUser.height}</div>
     <div id="userWeight">${model.app.loggedInUser.weight}</div>
-    <div id="userBio">${model.app.loggedInUser.aboutMe}</div>
+    <div id="userBio" style="height:fit-contnet;width:250px; border:solid; overflow:hidden;">${model.app.loggedInUser.aboutMe}</div>
     <button onclick="mainPage()">Main page</button>
     <button onclick="editProfileView()">Edit profile</button>
 
@@ -37,7 +37,7 @@ function editProfileView() {
     <div id="userAge"><input value="${model.app.loggedInUser.age}" type="text" oninput="model.app.loggedInUser.age = this.value"></div>
     <div id="userHeight"><input value="${model.app.loggedInUser.height}" oninput="model.app.loggedInUser.height = this.value"></div>
     <div id="userWeight"><input value="${model.app.loggedInUser.weight}" oninput="model.app.loggedInUser.weight = this.value"></div>
-    <div id="userBio"><input value="${model.app.loggedInUser.aboutMe}" oninput="model.app.loggedInUser.aboutMe = this.value"></div>
+    <div id="userBio"><input style="height:fit-content; weight:150px;" value="${model.app.loggedInUser.aboutMe}" oninput="model.app.loggedInUser.aboutMe = this.value"></div>
 
     <button onclick="profileView()">Save</button>
     `;
