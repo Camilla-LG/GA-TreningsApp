@@ -55,6 +55,7 @@ function settingsPage() {
   </div>
 </div>
     `;
+    setInterval(updateTime, 1000);
 }
 
 function editPassword(){
