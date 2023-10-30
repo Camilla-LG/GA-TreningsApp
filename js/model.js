@@ -59,7 +59,6 @@ const model = {
             time: '12:30',
             workout: 'squats',
             log: '',
-            bodypart: ["thighs", "knees"],
             volum:{set: 2, rep: 10}
           },
           {
@@ -67,7 +66,6 @@ const model = {
             time: '12:00',
             workout: 'somn',
             log: '',
-            bodypart: [],
             volum:{set: 2, rep: 10}
           }],
 
@@ -81,7 +79,6 @@ const model = {
             time: '12:30',
             workout: 'squats',
             log: '',
-            bodypart: [],
             volum:{set: 2, rep: 10}
           }],
       },
