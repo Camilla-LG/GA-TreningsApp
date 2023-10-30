@@ -7,7 +7,7 @@ function wikiPage(){
     <span class="wikiSpan">Main Page</span>
     <p>
     
-
+    <!-- tekstinnhold med valgmuligheter -->
     <div class="wikiSelectionText">
     <div>What is the focus of your workout?</div>
     <p>

@@ -159,7 +159,7 @@ select {
     width: 60px; 
     height: 65px;
     color: transparent;
-  /*  border: solid red;  */
+  /* border: solid red; */
     bottom: 30%;
     left: -52%;
     transform: rotate(4deg);
@@ -169,7 +169,7 @@ select {
     width: 60px; 
     height: 65px;
     color: transparent;
-  /*  border: solid red; */ 
+  /* border: solid red; */ 
     bottom: 30%;
     left: -10%;
     transform: rotate(-3deg);
@@ -179,7 +179,7 @@ select {
     width: 70px; 
     height: 250px;
     color: transparent; 
-   /*  border: solid red; */
+   /* border: solid red; */
      bottom: -55%;
      left: -57%;
      transform: rotate(4deg);
@@ -197,58 +197,59 @@ select {
   .chest {
     position: absolute;
     width: 143px; 
-    height: 90px;
+    height: 110px;
     color: transparent; 
-   /* border: solid red; */
-    bottom: 20%;
+ /* border: solid red; */
+    bottom: 16%;
     left: -40%;
     transform: rotate(-2deg);
   }
   .stomach {
     position: absolute;
-    width: 130px; 
-    height: 120px;
+    width: 155px; 
+    height: 175px;
     color: transparent; 
-    /* border: solid red; */ 
-    top: 100%;
-    left: 25%; 
+   /* border: solid red; */ 
+    top: 84%;
+    left: -39.5%; 
+    transform: rotate(-2deg);
   } 
 .leftLeg {
     position: absolute;
-    width: 55px; 
-    height: 350px;
+    width: 80px; 
+    height: 440px;
     color: transparent; 
-    /* border: solid red; */ 
-    top: 150%;
-    left: 25%; 
+  /* border: solid red; */ 
+    top: 145%;
+    left: -40%; 
 }
 .rightLeg {
     position: absolute;
-    width: 55px; 
-    height: 350px;
+    width: 80px; 
+    height: 440px;
     color: transparent; 
-    /* border: solid red; */ 
-    top: 150%;
-    left: 40%; 
+  /* border: solid red; */ 
+    top: 144%;
+    left: -23%; 
 }
 .leftKnee {
     position: absolute;
-    width: 50px; 
-    height: 50px;
+    width: 60px; 
+    height: 60px;
     color: transparent; 
-  /* border: solid red; */ 
-    top: 200%;
-    left: 25%;
+  /* border: solid red; */
+    top: 210%;
+    left: -37%;
     z-index: 1;
 }
 .rightKnee {
     position: absolute;
-    width: 50px; 
-    height: 50px;
+    width: 62px; 
+    height: 60px;
     color: transparent; 
-    /* border: solid red; */ 
-    top: 200%;
-    left: 40%;
+  /* border: solid red; */
+    top: 210%;
+    left: -22.5%;
     z-index: 1;
 } 
 
