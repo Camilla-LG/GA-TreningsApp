@@ -6,7 +6,7 @@ const model = {
       mode: ['dark', 'light'],
       unit: ['metric', 'imperial'],
       dateFormat: ['DD/MM/YYYY', 'Day, Month, Year'],
-      timeFormat: ['12','24'],
+      timeFormat: ['12', '24'],
       challengeReminder: {
         on: true, interval: '16.30', days: 'M/T/F/S'
       },
@@ -49,20 +49,41 @@ const model = {
         workout: ["squats"],
         bodypart: ["thighs", "knees"]
       },],
-      currentWeek: 1,
+      currentLog: 0,
       log: [{
-        week: 1,
-        day: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
-        time: ["12:00"],
-        workout: ["squats"],
-        bodypart: ["thighs", "knees"]
+        id: 0,
+        dato: '29-10-2023',
+        task: [
+          {
+            type: 'strength',
+            time: '12:30',
+            workout: 'squats',
+            log: '',
+            bodypart: ["thighs", "knees"],
+            volum:{set: 2, rep: 10}
+          },
+          {
+            type: 'strength',
+            time: '12:00',
+            workout: 'somn',
+            log: '',
+            bodypart: [],
+            volum:{set: 2, rep: 10}
+          }],
+
       },
       {
-        week: 2,
-        day: ["monday", "tuesday", "wednesday"],
-        time: ["15:00"],
-        workout: ["pushups"],
-        bodypart: ["arms", "chest"]
+        id: 1,
+        dato: '30-10-2023',
+        task: [
+          {
+            type: 'strength',
+            time: '12:30',
+            workout: 'squats',
+            log: '',
+            bodypart: [],
+            volum:{set: 2, rep: 10}
+          }],
       },
       ],
     },
@@ -107,7 +128,8 @@ const model = {
     },
 
     log: {
-      week: 1,
+      id: 1,
+      dato: '',
       time: [""],
       workout: [""],
       bodypart: [""],
@@ -206,14 +228,23 @@ const logOutCopy = {
     workout: [],
     bodypart: []
   },],
-  currentWeek: null,
+  currentLog: null,
   log: [{
-    week: 1,
-    day: [],
-    time: [],
-    workout: [],
-    bodypart: []
-  },],
+    id: 1,
+    dato: '',
+    task: [
+      {
+        type: '',
+        time: '',
+        workout: '',
+        log: '',
+        bodypart: [],
+        volum:{set: 2, rep: 10}
+      },
+    ],
+
+  }
+    ,],
 }
 
 
