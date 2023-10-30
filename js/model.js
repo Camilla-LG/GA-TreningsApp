@@ -43,30 +43,32 @@ const model = {
         days: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
         programDetails: ["fullbody", "chest", "shoulders"],
       },],
-      schedule: [{
-        day: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
-        time: ["12:00"],
-        workout: ["squats"],
-        bodypart: ["thighs", "knees"]
-      },],
+      schedule:{
+        dato: '30-10-2023',
+        task: [
+          {
+            time: '',
+            workout: '',
+            log: '',
+            volum: { set: 0, rep: 0 }
+          }]
+      },
       currentLog: 0,
       log: [{
         id: 0,
         dato: '29-10-2023',
         task: [
           {
-            type: 'strength',
             time: '12:30',
             workout: 'squats',
             log: '',
-            volum:{set: 2, rep: 10}
+            volum: { set: 2, rep: 10 }
           },
           {
-            type: 'strength',
             time: '12:00',
             workout: 'somn',
             log: '',
-            volum:{set: 2, rep: 10}
+            volum: { set: 2, rep: 10 }
           }],
 
       },
@@ -75,11 +77,10 @@ const model = {
         dato: '30-10-2023',
         task: [
           {
-            type: 'strength',
             time: '12:30',
             workout: 'squats',
             log: '',
-            volum:{set: 2, rep: 10}
+            volum: { set: 2, rep: 10 }
           }],
       },
       ],
@@ -118,18 +119,14 @@ const model = {
     },
 
     schedule: {
-      day: [""],
-      time: [""],
-      workout: [""],
-      bodypart: [""],
-    },
-
-    log: {
-      id: 1,
-      dato: '',
-      time: [""],
-      workout: [""],
-      bodypart: [""],
+      dato: '30-10-2023',
+      task: [
+        {
+          time: '',
+          workout: '',
+          log: '',
+          volum: { set: 0, rep: 0 }
+        }],
     },
 
     editProfileImg: "",
@@ -236,7 +233,7 @@ const logOutCopy = {
         workout: '',
         log: '',
         bodypart: [],
-        volum:{set: 2, rep: 10}
+        volum: { set: 2, rep: 10 }
       },
     ],
 
@@ -275,10 +272,16 @@ const inputCopy = {
   },
 
   schedule: {
-    day: [""],
-    time: [""],
-    workout: [""],
-    bodypart: [""],
+    id: 0,
+    dato: '',
+    task: [
+      {
+        type: '',
+        time: '',
+        workout: '',
+        log: '',
+        volum: { set: 0, rep: 0 }
+      }],
   },
   currentWeek: 1,
   log: {
