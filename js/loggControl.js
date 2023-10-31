@@ -5,12 +5,12 @@ function choseDay(index) {
 
 
 function updateRep(index, value) {
-    model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[index].volum.rep = value;
+    model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[index].rep = value;
 }
 
 function updateLog(index, value) {
     model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[index].log = value;
 }
 function updateSets(index, value) {
-    model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[index].volum.set = value;
+    model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[index].set = value;
 }

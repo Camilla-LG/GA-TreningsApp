@@ -32,8 +32,8 @@ function drawTask() {
             <div>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element].time}</div>
             <div>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element].type.toUpperCase()}</div>
             <div>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element].workout.toUpperCase()}</div>
-            <div>Sets :  ${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element].volum.set}</div>
-            <div>Reps :  ${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element].volum.rep}</div>
+            <div>Sets :  ${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element].set}</div>
+            <div>Reps :  ${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element].rep}</div>
             <div>Log  :  ${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element].log}</div>
         </div>
         `;
@@ -51,8 +51,8 @@ function editTask() {
             <div>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element2].time}</div>
             <div>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element2].type.toUpperCase()}</div>
             <div>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element2].workout.toUpperCase()}</div>
-            <div><input type="number" oninput="updateSets(${element2}, this.value)" value="${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element2].volum.set}"></div>
-            <div><input type="number" oninput="updateRep(${element2}, this.value)" value="${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element2].volum.rep}"></div>
+            <div><input type="number" oninput="updateSets(${element2}, this.value)" value="${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element2].set}"></div>
+            <div><input type="number" oninput="updateRep(${element2}, this.value)" value="${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element2].rep}"></div>
             <div><input type="text" oninput="updateLog(${element2}, this.value)" value="${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element2].log}"></div>
         </div>
         `;

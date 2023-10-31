@@ -43,32 +43,34 @@ const model = {
         days: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
         programDetails: ["fullbody", "chest", "shoulders"],
       },],
-      schedule:{
+      schedule: {
         dato: '30-10-2023',
         task: [
           {
             time: '',
             workout: '',
             log: '',
-            volum: { set: 0, rep: 0 }
+            set: 0,
+            rep: 0
           }]
       },
       currentLog: 0,
       log: [{
-        id: 0,
-        dato: '29-10-2023',
+        dato: '2023-30-11',
         task: [
           {
             time: '12:30',
             workout: 'squats',
             log: '',
-            volum: { set: 2, rep: 10 }
+            set: 2,
+            rep: 10
           },
           {
-            time: '12:00',
+            time: '13:00',
             workout: 'somn',
             log: '',
-            volum: { set: 2, rep: 10 }
+            set: 2,
+            rep: 10
           }],
 
       },
@@ -80,7 +82,7 @@ const model = {
             time: '12:30',
             workout: 'squats',
             log: '',
-            volum: { set: 2, rep: 10 }
+            set: 2, rep: 10
           }],
       },
       ],
@@ -125,7 +127,8 @@ const model = {
           time: '',
           workout: '',
           log: '',
-          volum: { set: 0, rep: 0 }
+          set: 0,
+          rep: 0
         }],
     },
 
@@ -224,7 +227,6 @@ const logOutCopy = {
   },],
   currentLog: null,
   log: [{
-    id: 1,
     dato: '',
     task: [
       {
@@ -232,13 +234,13 @@ const logOutCopy = {
         time: '',
         workout: '',
         log: '',
-        bodypart: [],
-        volum: { set: 2, rep: 10 }
+        set: 2, rep: 10
       },
     ],
 
-  }
-    ,],
+  },
+  ]
+  ,
 }
 
 
@@ -272,24 +274,26 @@ const inputCopy = {
   },
 
   schedule: {
-    id: 0,
     dato: '',
     task: [
       {
-        type: '',
         time: '',
         workout: '',
         log: '',
-        volum: { set: 0, rep: 0 }
+        set: 0,
+        rep: 0
       }],
   },
-  currentWeek: 1,
-  log: {
-    week: 1,
-    time: [""],
-    workout: [""],
-    bodypart: [""],
-  },
+  currentLog: 1,
+  log:
+    [{
+      type: '',
+      time: '',
+      workout: '',
+      log: '',
+      set: 2, rep: 10
+    },
+    ],
 
   editProfileImg: "",
 }
