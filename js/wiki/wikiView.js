@@ -36,7 +36,7 @@ function wikiPage(){
     <div class="rightLeg"id="legDiv"onclick="legView()">leg</div>
     </div>
      
-     
+    
     `;
 }
 
