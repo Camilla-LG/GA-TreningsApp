@@ -1,7 +1,6 @@
-// Legg view for logg her Said
-
 function loggView() {
     let loggHtml = /*HTML*/`
+    <button onclick="mainPage()">X</button>
     <h1>Choose week</h1>
     <input type="text">
     <div style="witdh: fit-content; overflow: auto;">
@@ -62,7 +61,7 @@ function editTask() {
 function drawTemplete() {
     let loggTemplete = /*HTML*/`
         <h1>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].dato}</h1>
-        <button onclick="mainPage()">Main page</button>
+        <button onclick="loggView()">Back</button>
         <button onclick="editTemplete()">Edit</button>
         <div>
             ${drawTask()}
@@ -73,7 +72,6 @@ function drawTemplete() {
 function editTemplete() {
     let loggTemplete = /*HTML*/`
         <h1>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].dato}</h1>
-        <button onclick="mainPage()">Main page</button>
         <button onclick="drawTemplete()">Save</button>
         <div>
             ${editTask()}
