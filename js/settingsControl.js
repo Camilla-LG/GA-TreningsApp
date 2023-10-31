@@ -64,24 +64,47 @@ function selectDateOption(){
 
 
 
-//Med denne funksjonen, velger du hvordan du ønsker at klokken skal vises
+// //Med denne funksjonen, velger du hvordan du ønsker at klokken skal vises
+
+function updateTime(){
+  let currentTime = new Date();
+  time = currentTime.toLocaleTimeString();
+  document.getElementById('outputTime').textContent = time;
+}
 
 function selectTimeOption(){
-  let timeFormat = document.getElementById("timeFormat");
-  let selectedFormat = timeFormat.value;
-  let currentTime = new Date();
+  let timeDiv = updateTime.value;
+  let selectedFormat = document.getElementById("timeFormat").value;
   let chosenTimeFormat = "";
+
   
   if (selectedFormat === "12hr"){
-    chosenTimeFormat = currentTime.toLocaleString('nb-NO', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
+    chosenTimeFormat = timeDiv.toLocaleTimeString('nb-NO', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
   } else if (selectedFormat === "24hr"){
-    chosenTimeFormat = currentTime.toLocaleString('nb-NO', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false});
+    chosenTimeFormat = timeDiv.toLocaleTimeString('nb-NO', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false});
   }
-  document.getElementById('outputTime').textContent = chosenTimeFormat;
+document.getElementById('outputTime').textContent = chosenTimeFormat;
 }
-setInterval(selectTimeOption, 1000);
 
 
 
+// function selectTimeOption(){
+//   let timeFormat = document.getElementById("timeFormat");
+//   let selectedFormat = timeFormat.value;
+//   let currentTime = new Date();
+//   let chosenTimeFormat = "";
 
+  
+//   if (selectedFormat === "12hr"){
+//     chosenTimeFormat = currentTime.toLocaleString('nb-NO', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
+//   } else if (selectedFormat === "24hr"){
+//     chosenTimeFormat = currentTime.toLocaleString('nb-NO', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false});
+//   }
+// document.getElementById('outputTime').textContent = chosenTimeFormat;
+// }
+
+
+  
+  
+  
 
