@@ -1,7 +1,7 @@
 const tasks = [];
 
 function scheduleView() {
-    document.getElementById('app').innerHTML = `
+    document.getElementById('app').innerHTML =/*HTML*/ `
         <h2>Dagens timeplan</h2>
         <table>
             <tr>
