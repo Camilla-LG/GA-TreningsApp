@@ -80,6 +80,7 @@ function updateTaskList() {
 
 // function scheduleView() {
 //     document.getElementById('app').innerHTML =/*HTML*/ `
+//         <button onclick="mainPage()">X</button>
 //         <h2>Dagens timeplan</h2>
 //         <table>
 //             <tr>

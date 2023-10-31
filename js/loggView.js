@@ -17,7 +17,7 @@ function drawLoggInv() {
     let weeks = 1
     let ave = ``
     for (let week of model.app.loggedInUser.log) {
-        ave += /*HTML*/ `<button onclick="choseDay(${weeks - 1})">Day ${weeks}</button>`
+        ave += /*HTML*/ `<button onclick="choseDay(${weeks - 1})">${model.app.loggedInUser.log[weeks-1].dato}</button>`
         weeks++
     }
     return ave;
@@ -30,7 +30,6 @@ function drawTask() {
         <br>
         <div>
             <div>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element].time}</div>
-            <div>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element].type.toUpperCase()}</div>
             <div>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element].workout.toUpperCase()}</div>
             <div>Sets :  ${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element].set}</div>
             <div>Reps :  ${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element].rep}</div>
@@ -49,7 +48,6 @@ function editTask() {
         <br>
         <div>
             <div>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element2].time}</div>
-            <div>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element2].type.toUpperCase()}</div>
             <div>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element2].workout.toUpperCase()}</div>
             <div><input type="number" oninput="updateSets(${element2}, this.value)" value="${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element2].set}"></div>
             <div><input type="number" oninput="updateRep(${element2}, this.value)" value="${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].task[element2].rep}"></div>

@@ -56,7 +56,7 @@ const model = {
       },
       currentLog: 0,
       log: [{
-        dato: '2023-30-11',
+        dato: '2023-11-29',
         task: [
           {
             time: '12:30',
@@ -76,13 +76,14 @@ const model = {
       },
       {
         id: 1,
-        dato: '30-10-2023',
+        dato: '2023-11-30',
         task: [
           {
             time: '12:30',
             workout: 'squats',
             log: '',
-            set: 2, rep: 10
+            set: 2,
+            rep: 10
           }],
       },
       ],
@@ -230,7 +231,6 @@ const logOutCopy = {
     dato: '',
     task: [
       {
-        type: '',
         time: '',
         workout: '',
         log: '',
@@ -287,7 +287,6 @@ const inputCopy = {
   currentLog: 1,
   log:
     [{
-      type: '',
       time: '',
       workout: '',
       log: '',
