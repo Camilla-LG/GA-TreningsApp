@@ -23,7 +23,7 @@ function wikiPage(){
     <h1 class="wikiHeader">MuscleWiki</h1>
 
     <!-- usynlige div'er for å trykke på deler av kroppen -->
-    <img class="wikiBody"src="anatomy-charts-human-body-muscle-systems-skeletal(beskjært).jpg"><img>
+    <img class="wikiBody"src="images/anatomy-charts-human-body-muscle-systems-skeletal(beskjært).jpg"><img>
     <div class="leftShoulder"id="shoulderDiv" onclick="shoulderView()">shoulder</div>
     <div class="rightShoulder"id="shoulderDiv" onclick="shoulderView()">shoulder</div>
     <div class="leftArm"id="armDiv" onclick="armView()">arm</div>
@@ -35,8 +35,8 @@ function wikiPage(){
     <div class="leftLeg"id="legDiv"onclick="legView()">leg</div>
     <div class="rightLeg"id="legDiv"onclick="legView()">leg</div>
     </div>
-
-
+     
+     
     `;
 }
 
