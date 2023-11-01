@@ -50,7 +50,7 @@ function settingsPage() {
   <div class="testOutputs">
     <div class='outputUnit' id="height"></div>
     <div class='outputUnit' id="weight"></div>
-    <div id='outputDate'> ${mainDateFormat} </div>
+    <div id='outputDate'>  </div>
     <div id='outputTime'>  </div>
   </div>
 </div>

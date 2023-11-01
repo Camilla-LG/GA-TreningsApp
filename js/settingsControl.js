@@ -1,6 +1,4 @@
-let options = {weekday: 'long', year: 'numeric', month: 'long', day:'numeric'};
-let today = new Date();
-let mainDateFormat = today.toLocaleDateString(undefined, options);
+
 
 
 
@@ -55,14 +53,29 @@ function selectUnitOption() {
 
 function selectDateOption(){
   let selectedDateFormat = document.getElementById("dateFormat").value;
-  let chosenDateFormat = mainDateFormat;
+  let outputDates = document.getElementById("outputDates");
+  let today = new Date();
+  let options = {weekday: 'long', year: 'numeric', month: 'long', day:'numeric'};
+  let daysOfWeek = ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"];
+  // let mainDateFormat = today.toLocaleDateString(undefined, options);
+  // let chosenDateFormat = mainDateFormat;
+  let chosenDateFormats = "";
 
-  if (selectedDateFormat === "numeric"){
-    chosenDateFormat = today.toLocaleDateString();
-  } else if (selectedDateFormat === "text"){
-    chosenDateFormat = today.toLocaleDateString(undefined, options);
+  for (let i = 0; i < daysOfWeek.length; i++){
+    let dayDate = new Date(today);
+    dayDate.setDate(today.getDate() + i);
+
+    let chosenDateFormat;
+    
+    if (selectedDateFormat === "numeric"){
+      chosenDateFormat = dayDate.toLocaleDateString();
+    } else if (selectedDateFormat === "text"){
+      chosenDateFormat = dayDate.toLocaleDateString(undefined, options);
+    }
+    chosenDateFormats += `<p> ${daysOfWeek[i]} : ${chosenDateFormat} </p>`;
+    // document.getElementById('outputDate').textContent = chosenDateFormat;
   }
-  document.getElementById('outputDate').textContent = chosenDateFormat;
+  outputDates.innerHTML = chosenDateFormats;
 }
 
 function updateTimeDiv(){

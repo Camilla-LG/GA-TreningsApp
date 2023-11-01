@@ -1,4 +1,4 @@
-function finishDay(location) {
+ function finishDay(location) {
     const currentDate = new Date();
     const day = currentDate.getDate();
     const month = currentDate.getMonth() + 1; 
@@ -19,4 +19,5 @@ function finishDay(location) {
       }else updateTaskList();
     }
   }
+  
   
