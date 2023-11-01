@@ -45,14 +45,7 @@ const model = {
       },],
       schedule: {
         dato: '30-10-2023',
-        task: [
-          {
-            time: '',
-            workout: '',
-            log: '',
-            set: 0,
-            rep: 0
-          }]
+        task: []
       },
       currentLog: 0,
       log: [{
@@ -75,7 +68,6 @@ const model = {
 
       },
       {
-        id: 1,
         dato: '2023-11-30',
         task: [
           {
@@ -122,15 +114,8 @@ const model = {
     },
 
     schedule: {
-      dato: '30-10-2023',
-      task: [
-        {
-          time: '',
-          workout: '',
-          log: '',
-          set: 0,
-          rep: 0
-        }],
+      dato: '',
+      task: [],
     },
 
     editProfileImg: "",
@@ -185,19 +170,29 @@ const model = {
         days: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
         programDetails: ["fullbody", "chest", "shoulders"],
       },],
-      schedule: [{
-        day: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
-        time: ["12:00"],
-        workout: ["squats"],
-        bodypart: ["thighs", "knees"]
-      },],
+
+      schedule: {
+        dato: '',
+        task: [
+          {
+            time: '',
+            workout: '',
+            log: '',
+            set: 0,
+            rep: 0
+          }],
+      },
       currentWeek: 1,
       log: [{
-        week: 1,
-        day: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
-        time: ["12:00"],
-        workout: ["squats"],
-        bodypart: ["thighs", "knees"]
+        dato: '2023-11-30',
+        task: [
+          {
+            time: '12:30',
+            workout: 'squats',
+            log: '',
+            set: 2,
+            rep: 10
+          }],
       },],
     },],
   },
