@@ -115,7 +115,13 @@ const model = {
 
     schedule: {
       dato: '',
-      task: [],
+      task: [          {
+        time: '12:30',
+        workout: 'squats',
+        log: '',
+        set: 2,
+        rep: 10
+      }],
     },
 
     editProfileImg: "",
