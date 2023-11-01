@@ -44,12 +44,12 @@ const model = {
         programDetails: ["fullbody", "chest", "shoulders"],
       },],
       schedule: {
-        dato: '30-10-2023',
+        dato: '',
         task: []
       },
       currentLog: 0,
       log: [{
-        dato: '2023-11-29',
+        dato: '2023-10-29',
         task: [
           {
             time: '12:30',
@@ -68,7 +68,7 @@ const model = {
 
       },
       {
-        dato: '2023-11-30',
+        dato: '2023-10-30',
         task: [
           {
             time: '12:30',
@@ -190,7 +190,7 @@ const model = {
       },
       currentWeek: 1,
       log: [{
-        dato: '2023-11-30',
+        dato: '2023-10-30',
         task: [
           {
             time: '12:30',
