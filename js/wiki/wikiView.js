@@ -11,12 +11,12 @@ function wikiPage(){
     <div class="wikiSelectionText">
     <div>What is the focus of your workout?</div>
     <p>
-    <div id="shoulderDiv" onclick="shoulderView()">shoulders</div>
-    <div id="armDiv" onclick="armView()">arms</div>
-    <div id="chestDiv" onclick="chestView()">chest</div>
-    <div id="stomachDiv"onclick="stomachView()">stomach</div>
-    <div id="kneeDiv"onclick="kneeView()">knees</div>
-    <div id="legDiv"onclick="legView()">legs</div>
+    <div id="shoulderDiv"class="shoulderSelectionText" onclick="shoulderView()">shoulders</div>
+    <div id="armDiv"class="armSelectionText" onclick="armView()">arms</div>
+    <div id="chestDiv"class="chestSelectionText" onclick="chestView()">chest</div>
+    <div id="stomachDiv"class="stomachSelectionText" onclick="stomachView()">stomach</div>
+    <div id="kneeDiv"class="kneeSelectionText" onclick="kneeView()">knees</div>
+    <div id="legDiv"class="legSelectionText" onclick="legView()">legs</div>
     </div>
 
     <div class="image-container">

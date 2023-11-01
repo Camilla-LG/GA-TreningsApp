@@ -12,6 +12,24 @@
     top: 100px;
     left: 50px;
 }
+.shoulderSelectionText:hover{
+  color: palevioletred;
+}
+.armSelectionText:hover{
+  color: palevioletred;
+}
+.chestSelectionText:hover{
+  color: palevioletred;
+}
+.stomachSelectionText:hover{
+  color: palevioletred;
+}
+.legSelectionText:hover{
+  color:palevioletred;
+}
+.kneeSelectionText:hover{
+  color:palevioletred;
+}
 
 .image-container {
     position: relative;
