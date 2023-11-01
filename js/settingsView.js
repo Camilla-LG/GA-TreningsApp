@@ -26,7 +26,7 @@ function settingsPage() {
         <option value="text"> Day, Month, Year </option>  
         <option value="numeric"> DD/MM/YYYY </option>
       </select>
-      <select id="timeFormat" name="timeSelect" onchange="selectTimeOption()">
+      <select id="timeFormat" name="timeSelect" onchange="updateTimeDiv()">
       <option value="12hr"> AM/PM </option>
       <option value="24hr"> 24 Timer </option>
       </select>
@@ -51,11 +51,13 @@ function settingsPage() {
     <div class='outputUnit' id="height"></div>
     <div class='outputUnit' id="weight"></div>
     <div id='outputDate'> ${mainDateFormat} </div>
-    <div id='outputTime'></div>
+    <div id='outputTime'>  </div>
   </div>
 </div>
     `;
-    setInterval(updateTime, 1000);
+    // setInterval(function(){chosenTimeFormat++;}, 1000); 
+    // setInterval(selectTimeOption, 1000);
+    setInterval(updateTimeDiv, 1000);
 }
 
 function editPassword(){
