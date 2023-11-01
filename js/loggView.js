@@ -12,6 +12,19 @@ function loggView() {
 }
 
 
+function drawTemplete() {
+    let loggTemplete = /*HTML*/`
+        <h1>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].dato}</h1>
+        <button onclick="loggView()">Back</button>
+        <button onclick="editTemplete()">Edit</button>
+        <div>
+            ${drawTask()}
+        </div>
+        `;
+    document.getElementById('app').innerHTML = loggTemplete;
+}
+
+
 function drawLoggInv() {
     let weeks = 1
     let ave = ``
@@ -58,17 +71,6 @@ function editTask() {
     return z;
 }
 
-function drawTemplete() {
-    let loggTemplete = /*HTML*/`
-        <h1>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].dato}</h1>
-        <button onclick="loggView()">Back</button>
-        <button onclick="editTemplete()">Edit</button>
-        <div>
-            ${drawTask()}
-        </div>
-        `;
-    document.getElementById('app').innerHTML = loggTemplete;
-}
 function editTemplete() {
     let loggTemplete = /*HTML*/`
         <h1>${model.app.loggedInUser.log[model.app.loggedInUser.currentLog].dato}</h1>
