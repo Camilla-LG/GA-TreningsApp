@@ -14,7 +14,13 @@ function mainPage() {
             <div onclick="logOut()">Logout</div>
         </div>
         <div class="nextWorkout">
-            <h3> Neste økt! </h3>
+            <h3>Dagens plan</h3>
+            <div style="display:flex;flex-direction:row;">
+                <div class="generalBox" style=" margin-left: 160px; width:40px;">Time</div>
+                <div class="generalBox" style=" margin-left: 10px; width: 55px;">Workout</div>
+                <div class="generalBox" style=" margin-left: 10px; width:30px;">Sets</div>
+                <div class="generalBox" style=" margin-left: 10px; width:30px;">Reps</div>
+            </div>
             <div>${drawPlan()}</div>
             <button ></button>
         </div>
@@ -22,18 +28,23 @@ function mainPage() {
     `;
 }
 
+// not done yet
+
 function drawPlan() {
     let html = '';
-
+    
     for (let i = 0; i < model.input.schedule.task.length; i++) {
+        let checked = model.input.schedule.task[i].isDone !== true?'':'checked';
         html += /*HTML*/`
         <div style="display:flex;flex-direction:row;">
-            <div style="margin-left:10px;">${model.input.schedule.task[i].time}</div>
-            <div style="margin-left:10px;">${model.input.schedule.task[i].workout}</div>
-            <div style="margin-left:10px;">${model.input.schedule.task[i].set}</div>
-            <div style="margin-left:10px;">${model.input.schedule.task[i].rep}</div>
+            <div class="generalBox" style="margin-left:160px; width:40px">${model.input.schedule.task[i].time}</div>
+            <div class="generalBox" style="margin-left:10px;  width:55px">${model.input.schedule.task[i].workout}</div>
+            <div class="generalBox" style="margin-left:10px;  width:30px">${model.input.schedule.task[i].set}</div>
+            <div class="generalBox" style="margin-left:10px;  width:30px">${model.input.schedule.task[i].rep}</div>
+            <br>
+            <div class="checkbox ${checked}" onclick="toggleCheckbox(${i})"></div>
         </div>
         `;
     }
-    return model.input.schedule.task.length == '' ? 'No tasks added yet': html;
+    return model.input.schedule.task.length == '' ? 'No tasks added yet' : html;
 }
