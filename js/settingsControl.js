@@ -1,3 +1,9 @@
+let options = {weekday: 'long', year: 'numeric', month: 'long', day:'numeric'};
+let today = new Date();
+let mainDateFormat = today.toLocaleDateString(undefined, options);
+
+
+
 function checkIfYou() {
   if (model.input.editPass.checkIfYou === model.app.loggedInUser.password)
     passwordEditPage();
@@ -48,15 +54,12 @@ function selectUnitOption() {
 //Med denne funksjonen, velger du hvordan du ønsker at datoen skal vises
 
 function selectDateOption(){
-  let dateFormat = document.getElementById("dateFormat");
-  let selectedFormat = dateFormat.value;
-  let options = {weekday: 'long', year: 'numeric', month: 'long', day:'numeric'};
-  let today = new Date();
-  let chosenDateFormat = "";
+  let selectedDateFormat = document.getElementById("dateFormat").value;
+  let chosenDateFormat = mainDateFormat;
 
-  if (selectedFormat === "numeric"){
+  if (selectedDateFormat === "numeric"){
     chosenDateFormat = today.toLocaleDateString();
-  } else if (selectedFormat === "text"){
+  } else if (selectedDateFormat === "text"){
     chosenDateFormat = today.toLocaleDateString(undefined, options);
   }
   document.getElementById('outputDate').textContent = chosenDateFormat;
