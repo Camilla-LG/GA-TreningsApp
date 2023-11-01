@@ -13,22 +13,34 @@
     left: 50px;
 }
 .shoulderSelectionText:hover{
-  color: palevioletred;
+  background-color: rgb(252, 223, 169);
+  width: 98px;
+  color: black;
 }
 .armSelectionText:hover{
-  color: palevioletred;
+  background-color: rgb(252, 223, 169);
+  width: 51px;
+  color: black;
 }
 .chestSelectionText:hover{
-  color: palevioletred;
+  background-color: rgb(252, 223, 169);
+  width: 53px;
+  color: black;
 }
 .stomachSelectionText:hover{
-  color: palevioletred;
+  background-color: rgb(252, 223, 169);
+  width: 85px;
+  color: black;
 }
 .legSelectionText:hover{
-  color:palevioletred;
+  background-color: rgb(252, 223, 169);
+  width: 43px;
+  color: black;
 }
 .kneeSelectionText:hover{
-  color:palevioletred;
+  background-color: rgb(252, 223, 169);
+  width: 59px;
+  color: black;
 }
 
 .image-container {
