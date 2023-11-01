@@ -23,8 +23,8 @@ function settingsPage() {
         <option value="imperial"> Imperial </option>
       </select>
       <select id="dateFormat" name="dateSelect"  onchange="selectDateOption()">
-        <option value="numeric"> DD/MM/YYYY </option>
         <option value="text"> Day, Month, Year </option>  
+        <option value="numeric"> DD/MM/YYYY </option>
       </select>
       <select id="timeFormat" name="timeSelect" onchange="selectTimeOption()">
       <option value="12hr"> AM/PM </option>
@@ -50,7 +50,7 @@ function settingsPage() {
   <div class="testOutputs">
     <div class='outputUnit' id="height"></div>
     <div class='outputUnit' id="weight"></div>
-    <div id='outputDate'></div>
+    <div id='outputDate'> ${mainDateFormat} </div>
     <div id='outputTime'></div>
   </div>
 </div>

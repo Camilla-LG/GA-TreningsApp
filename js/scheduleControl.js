@@ -7,9 +7,9 @@ function finishDay() {
     // Push the log entry with the custom date and tasks
     model.app.loggedInUser.log.push({
       dato: `${year}-${month}-${day}`,
-      task: tasks
+      task: model.input.schedule.task
     });
-    tasks = [];
+    model.input.schedule.task = [];
     task = {};
     updateTaskList()
   }

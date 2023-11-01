@@ -1,17 +1,16 @@
-let tasks = [];
-
 function scheduleView() {
     document.getElementById('app').innerHTML =/*HTML*/ `
         <button onclick="mainPage()">X</button>
         <h2>Dagens timeplan</h2>
         <table>
             <tr>
-                <th>Dato</th>
-                <th>Tidspunkt</th>
-                <th>Aktivitet</th>
-                <th>Antall sett</th>
-            </tr>
-        </table>
+                <th>Time</th>
+                <th>Workout</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                </tr>
+                </table>
+                ${updateTaskList()}
 
         <h2>Legg til økt</h2>
         <input type="text" id="taskInput" placeholder="Skriv inn øvelse">
@@ -28,7 +27,7 @@ function addTask() {
     const setCount = document.getElementById('setCount');
     const repCount = document.getElementById('repCount');
     const taskTime = document.getElementById('taskTime');
-    const taskList = document.getElementById('taskList');
+
 
     if (taskInput.value.trim() === '' || taskTime.value === '' || repCount.value === '' || setCount.value === '') {
         alert('Øvelse, dato, tidspunkt og antall sett kan ikke være tomme');
@@ -38,31 +37,30 @@ function addTask() {
     let task = {
         time: taskTime.value,
         workout: taskInput.value,
-        log:'',
+        log: '',
         set: setCount.value,
         rep: repCount.value,
     };
 
-    tasks.push(task);
+    model.input.schedule.task.push(task);
     repCount.value = '';
     taskInput.value = '';
     setCount.value = '';
     taskTime.value = '';
-    updateTaskList();
+    scheduleView()
 }
 
 function updateTaskList() {
-    const taskTable = document.querySelector('table');
     let html = '';
-    for (let i = 0; i < tasks.length; i++) {
+    for (let i = 0; i < model.input.schedule.task.length; i++) {
         html += /*HTML*/`
         <div style="display:flex;flex-direction:row;">
-            <div style="margin-left:10px;">Tid: ${tasks[i].time}</div>
-            <div style="margin-left:10px;">Workout: ${tasks[i].workout}</div>
-            <div style="margin-left:10px;">Set: ${tasks[i].set}</div>
-            <div style="margin-left:10px;">Rep: ${tasks[i].rep}</div>
+            <div style="margin-left:10px;">${model.input.schedule.task[i].time}</div>
+            <div style="margin-left:10px;">${model.input.schedule.task[i].workout}</div>
+            <div style="margin-left:10px;">${model.input.schedule.task[i].set}</div>
+            <div style="margin-left:10px;">${model.input.schedule.task[i].rep}</div>
         </div>
         `;
     }
-    taskTable.innerHTML = html;
+    return html;
 }
