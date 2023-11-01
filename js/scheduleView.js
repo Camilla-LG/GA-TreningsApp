@@ -18,7 +18,7 @@ function scheduleView() {
         <input style="width:80px;" type="number" id="repCount" placeholder="Antall reps"> <!-- Legg til dato-input -->
         <input type="time" id="taskTime"> <!-- Legg til tidspunkt-input -->
         <button onclick="addTask()">Legg til økt</button>
-        <button onclick="finishDay()">End day</button>
+        <button onclick="finishDay('sch')">End day</button>
         <ul id="taskList"></ul>
     `;
 }

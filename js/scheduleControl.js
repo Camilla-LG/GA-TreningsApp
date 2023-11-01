@@ -1,4 +1,4 @@
-function finishDay() {
+function finishDay(location) {
     const currentDate = new Date(); // Current date and time
     const day = currentDate.getDate();
     const month = currentDate.getMonth() + 1; // Months are zero-based
@@ -11,6 +11,8 @@ function finishDay() {
     });
     model.input.schedule.task = [];
     task = {};
-    updateTaskList()
+    if(location === 'main'){
+      mainPage()
+    }else updateTaskList();
   }
   
