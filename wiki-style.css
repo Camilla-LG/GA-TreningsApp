@@ -1,216 +1,252 @@
 /* wikiPage */
-.wikiExitButton{
-    width: 40px;
-    height: 40px;
+.wikiExitButton {
+  width: 40px;
+  height: 40px;
 }
-.wikiSpan{
-    font-size: 30px;
+
+.wikiSpan {
+  font-size: 30px;
 }
-.wikiSelectionText{
-    position: absolute;
-    font-size: 25px;
-    top: 100px;
-    left: 50px;
+
+.wikiSelectionText {
+  position: absolute;
+  font-size: 25px;
+  top: 100px;
+  left: 50px;
 }
-.shoulderSelectionText:hover{
+
+.shoulderSelectionText:hover {
   background-color: rgb(252, 223, 169);
   width: 98px;
   color: black;
 }
-.armSelectionText:hover{
+
+.armSelectionText:hover {
   background-color: rgb(252, 223, 169);
   width: 51px;
   color: black;
 }
-.chestSelectionText:hover{
+
+.chestSelectionText:hover {
   background-color: rgb(252, 223, 169);
   width: 53px;
   color: black;
 }
-.stomachSelectionText:hover{
+
+.stomachSelectionText:hover {
   background-color: rgb(252, 223, 169);
   width: 85px;
   color: black;
 }
-.legSelectionText:hover{
+
+.legSelectionText:hover {
   background-color: rgb(252, 223, 169);
   width: 43px;
   color: black;
 }
-.kneeSelectionText:hover{
+
+.kneeSelectionText:hover {
   background-color: rgb(252, 223, 169);
   width: 59px;
   color: black;
 }
 
 .image-container {
-    position: relative;
-    width: 500px; 
-    height: 300px;
-    left: 750px;
-  }
-  .wikiHeader{
-    position: absolute;
-  }
+  position: relative;
+  width: 500px;
+  height: 300px;
+  left: 750px;
+}
 
-  .wikiBody {
-    position: absolute;
-    top: -39px;
-    left: -300px;
-    z-index: -1;
-  }
-  .leftShoulder {
-    position: absolute;
-    width: 60px; 
-    height: 65px;
-    color: transparent;
+.wikiHeader {
+  position: absolute;
+}
+
+.wikiBody {
+  position: absolute;
+  top: -39px;
+  left: -300px;
+  z-index: -1;
+}
+
+.leftShoulder {
+  position: absolute;
+  width: 60px;
+  height: 65px;
+  color: transparent;
   /* border: solid red; */
-    bottom: 30%;
-    left: -52%;
-    transform: rotate(4deg);
-  }
-  .rightShoulder {
-    position: absolute;
-    width: 60px; 
-    height: 65px;
-    color: transparent;
-  /* border: solid red; */ 
-    bottom: 30%;
-    left: -10%;
-    transform: rotate(-3deg);
-  }
-  .leftArm {
-    position: absolute;
-    width: 70px; 
-    height: 250px;
-    color: transparent; 
-   /* border: solid red; */
-     bottom: -55%;
-     left: -57%;
-     transform: rotate(4deg);
-  }
-  .rightArm {
-    position: absolute;
-    width: 55px; 
-    height: 250px;
-    color: transparent; 
-   /*  border: solid red; */
-     bottom: -55%;
-     left: -5.4%;
-    transform: rotate(-4deg);
-  }
-  .chest {
-    position: absolute;
-    width: 143px; 
-    height: 110px;
-    color: transparent; 
- /* border: solid red; */
-    bottom: 16%;
-    left: -40%;
-    transform: rotate(-2deg);
-  }
-  .stomach {
-    position: absolute;
-    width: 155px; 
-    height: 175px;
-    color: transparent; 
-   /* border: solid red; */ 
-    top: 84%;
-    left: -39.5%; 
-    transform: rotate(-2deg);
-  } 
+  bottom: 30%;
+  left: -52%;
+  transform: rotate(4deg);
+  cursor: pointer;
+}
+
+.rightShoulder {
+  position: absolute;
+  width: 60px;
+  height: 65px;
+  color: transparent;
+  /* border: solid red; */
+  bottom: 30%;
+  left: -10%;
+  transform: rotate(-3deg);
+  cursor: pointer;
+}
+
+.leftArm {
+  position: absolute;
+  width: 70px;
+  height: 250px;
+  color: transparent;
+  /* border: solid red; */
+  bottom: -55%;
+  left: -57%;
+  transform: rotate(4deg);
+  cursor: pointer;
+}
+
+.rightArm {
+  position: absolute;
+  width: 55px;
+  height: 250px;
+  color: transparent;
+  /*  border: solid red; */
+  bottom: -55%;
+  left: -5.4%;
+  transform: rotate(-4deg);
+  cursor: pointer;
+}
+
+.chest {
+  position: absolute;
+  width: 143px;
+  height: 110px;
+  color: transparent;
+  /* border: solid red; */
+  bottom: 16%;
+  left: -40%;
+  transform: rotate(-2deg);
+  cursor: pointer;
+}
+
+.stomach {
+  position: absolute;
+  width: 155px;
+  height: 175px;
+  color: transparent;
+  /* border: solid red; */
+  top: 84%;
+  left: -39.5%;
+  transform: rotate(-2deg);
+  cursor: pointer;
+}
+
 .leftLeg {
-    position: absolute;
-    width: 80px; 
-    height: 440px;
-    color: transparent; 
-  /* border: solid red; */ 
-    top: 145%;
-    left: -40%; 
+  position: absolute;
+  width: 80px;
+  height: 440px;
+  color: transparent;
+  /* border: solid red; */
+  top: 145%;
+  left: -40%;
+  cursor: pointer;
 }
+
 .rightLeg {
-    position: absolute;
-    width: 80px; 
-    height: 440px;
-    color: transparent; 
-  /* border: solid red; */ 
-    top: 144%;
-    left: -23%; 
+  position: absolute;
+  width: 80px;
+  height: 440px;
+  color: transparent;
+  /* border: solid red; */
+  top: 144%;
+  left: -23%;
+  cursor: pointer;
 }
+
 .leftKnee {
-    position: absolute;
-    width: 60px; 
-    height: 60px;
-    color: transparent; 
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  color: transparent;
   /* border: solid red; */
-    top: 210%;
-    left: -37%;
-    z-index: 1;
+  top: 210%;
+  left: -37%;
+  z-index: 1;
+  cursor: pointer;
 }
+
 .rightKnee {
-    position: absolute;
-    width: 62px; 
-    height: 60px;
-    color: transparent; 
+  position: absolute;
+  width: 62px;
+  height: 60px;
+  color: transparent;
   /* border: solid red; */
-    top: 210%;
-    left: -22.5%;
-    z-index: 1;
-} 
+  top: 210%;
+  left: -22.5%;
+  z-index: 1;
+  cursor: pointer;
+}
 
 /* Video og treningssider */
 .image-containerWiki {
-    position: relative;
-    width: 500px; 
-    height: 300px;
-    left: 20%;
-  }
-.wikiShoulder{
-    position:absolute;
-    left: 185%;
-    bottom:-10%;
-}
-.wikiMenuButton{
-    position:absolute;
-    right: 50%;
-    top: 20%;
-    width: 10%;
-    height: 10%;
-    border-radius: 50%;
-    border-color:blanchedalmond;
-    background-color: lightsteelblue;
-}
-.videoDisplay{
-position: absolute;
-top: 120%;
-left: 50%;
-}
-.treningsInfo{
-    position: absolute;
-    left: 50%;
-    bottom: 0px;
-    width: 140%;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  left: 20%;
 }
 
-.prevArrow{ 
-    position: absolute;
-    width: 0;
-      height: 0;
-      border-left: 20px solid transparent; 
-      border-right: 20px solid transparent; 
-      border-bottom: 40px solid greenyellow; 
-      transform: rotate(-90deg); 
-      bottom: -300px;
-      left: 140px;
+.wikiShoulder {
+  position: absolute;
+  left: 185%;
+  bottom: -10%;
 }
-.nextArrow{
-    position: absolute;
-    width: 0;
-      height: 0;
-      border-left: 20px solid transparent; 
-      border-right: 20px solid transparent; 
-      border-bottom: 40px solid greenyellow; 
-      transform: rotate(90deg); 
-      bottom: -300px;
-      left: 950px;
+
+.wikiMenuButton {
+  position: absolute;
+  right: 50%;
+  top: 20%;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  border-color: blanchedalmond;
+  background-color: lightsteelblue;
+}
+
+.videoDisplay {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+}
+
+.treningsInfo {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  width: 140%;
+}
+
+.prevArrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid greenyellow;
+  transform: rotate(-90deg);
+  bottom: -300px;
+  left: 140px;
+  cursor: pointer;
+}
+
+.nextArrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid greenyellow;
+  transform: rotate(90deg);
+  bottom: -300px;
+  left: 950px;
+  cursor: pointer;
 }
