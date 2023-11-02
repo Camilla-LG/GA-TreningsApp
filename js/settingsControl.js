@@ -51,32 +51,32 @@ function selectUnitOption() {
 
 //Med denne funksjonen, velger du hvordan du ønsker at datoen skal vises
 
+
 function selectDateOption(){
-  let selectedDateFormat = document.getElementById("dateFormat").value;
-  let outputDates = document.getElementById("outputDates");
-  let today = new Date();
-  let options = {weekday: 'long', year: 'numeric', month: 'long', day:'numeric'};
-  let daysOfWeek = ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"];
-  // let mainDateFormat = today.toLocaleDateString(undefined, options);
-  // let chosenDateFormat = mainDateFormat;
-  let chosenDateFormats = "";
+  const selectedDateFormat = document.getElementById("dateFormat").value;
+  const rowOfDates = document.getElementById("rowOfDates");
+  const today = new Date();
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
-  for (let i = 0; i < daysOfWeek.length; i++){
-    let dayDate = new Date(today);
-    dayDate.setDate(today.getDate() + i);
+  for (let i = 0; i < 7; i++) {
+      const dayDate = new Date(today);
+      dayDate.setDate(today.getDate() + i);
 
-    let chosenDateFormat;
-    
-    if (selectedDateFormat === "numeric"){
-      chosenDateFormat = dayDate.toLocaleDateString();
-    } else if (selectedDateFormat === "text"){
-      chosenDateFormat = dayDate.toLocaleDateString(undefined, options);
-    }
-    chosenDateFormats += `<p> ${daysOfWeek[i]} : ${chosenDateFormat} </p>`;
-    // document.getElementById('outputDate').textContent = chosenDateFormat;
+      let chosenDateFormat;
+
+      if (selectedDateFormat === "numeric") {
+          chosenDateFormat = dayDate.toLocaleDateString();
+      } else if (selectedDateFormat === "text") {
+          chosenDateFormat = dayDate.toLocaleDateString(undefined, options);
+      }
+
+      const celle = rowOfDates.cells[i];
+      celle.textContent = chosenDateFormat;
   }
-  outputDates.innerHTML = chosenDateFormats;
 }
+
+// Kall funksjonen for å initialisere datoformatet når siden lastes
+selectDateOption();
 
 function updateTimeDiv(){
   let currentTime = new Date();

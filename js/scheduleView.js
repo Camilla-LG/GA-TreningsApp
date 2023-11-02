@@ -14,47 +14,41 @@ function scheduleView() {
         <button onclick="addTask()">Legg til økt</button>
         <button onclick="finishDay('sch')">End day</button>
         <ul id="taskList"></ul>
-
+        
         <div>Ukeplan</div> 
         <table border="1">
-            <tr id="rowOfDates">
-                <th id="mondayId">
-                    Mandag
-                    <br>
-                </th>
-                <th id="tuesdayId">Tirsdag</th>
-                <th id="wednesdayId">
-                    <div id='outputDates'></div>
-                </th>
-                <th id="thursdayId">Torsdag</th>
-                <th id="fridayId">Fredag</th>
-                <th id="saturdayId">Lørdag</th>
-                <th id="sundayId">Søndag</th>
-            </tr>
-            <tr>
-                <td>  
-                    <table>
-                        <tr>
-                        <th>Time</th>
-                        <th>Workout</th>
-                        <th>Sets</th>
-                        <th>Reps</th>
-                        </tr>
-                    </table>
-                    ${updateTaskList()}
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+        <tr id="rowOfDates">
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        </tr>
+        <tr>
+        <td>${updateTaskList()}</td>
+        <td>trening</td>
+        <td>fri</td>
+        <td>trening</td>
+        <td>trening</td>
+        <td>fri</td>
+        <td>fri</td>
+        </tr>
         </table>
-    `;
-}
-function addTask() {
-    const taskInput = document.getElementById('taskInput');
+        
+ <!-- OBS OBS! Denne ligger her foreløpig slik at vi ser at det fungerer,
+  da den ikke vil knytte seg opp mot function og select i settingsControl.view -->      
+        <select id="dateFormat" onchange="selectDateOption()">
+        <option value="numeric">DD/MM/YYYY</option>
+        <option value="text">Day, Month, Year</option>
+        </select>
+ 
+        `;
+        selectDateOption();
+    }
+    function addTask() {
+        const taskInput = document.getElementById('taskInput');
     const setCount = document.getElementById('setCount');
     const repCount = document.getElementById('repCount');
     const taskTime = document.getElementById('taskTime');
@@ -94,6 +88,32 @@ function updateTaskList() {
         `;
     }
     return html;
+}
+
+// OBS OBS! Ligge her midlertidig til vi har løst kommunikasjon mellom sidene
+
+function selectDateOption() {
+    const selectedDateFormat = document.getElementById("dateFormat").value;
+    const rowOfDates = document.getElementById("rowOfDates");
+    const today = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    let chosenDateFormat = "text";
+
+
+    for (let i = 0; i < 7; i++) {
+        const dayDate = new Date(today);
+        dayDate.setDate(today.getDate() + i);
+
+
+        if (selectedDateFormat === "numeric") {
+            chosenDateFormat = dayDate.toLocaleDateString();
+        } else if (selectedDateFormat === "text") {
+            chosenDateFormat = dayDate.toLocaleDateString(undefined, options);
+        }
+
+        const celle = rowOfDates.cells[i];
+        celle.textContent = chosenDateFormat;
+    }
 }
 
 
