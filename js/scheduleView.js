@@ -45,14 +45,14 @@ function scheduleView() {
         </select>
  
         `;
-        selectDateOption();
-    }
-    function addTask() {
-        const taskInput = document.getElementById('taskInput');
+    selectDateOption();
+}
+function addTask() {
+    const taskInput = document.getElementById('taskInput');
     const setCount = document.getElementById('setCount');
     const repCount = document.getElementById('repCount');
     const taskTime = document.getElementById('taskTime');
-    
+
 
     if (taskInput.value.trim() === '' || taskTime.value === '' || repCount.value === '' || setCount.value === '') {
         alert('Øvelse, dato, tidspunkt og antall sett kan ikke være tomme');
@@ -80,10 +80,10 @@ function updateTaskList() {
     for (let i = 0; i < model.input.schedule.task.length; i++) {
         html += /*HTML*/`
         <div style="display:flex;flex-direction:row;">
-            <div style="margin-left:10px;">${model.input.schedule.task[i].time}</div>
-            <div style="margin-left:10px;">${model.input.schedule.task[i].workout}</div>
-            <div style="margin-left:10px;">${model.input.schedule.task[i].set}</div>
-            <div style="margin-left:10px;">${model.input.schedule.task[i].rep}</div>
+            <div style="border:solid 1px; width:40px; padding:10px; padding-top:-5px; padding-bottom:-5px; ">${model.input.schedule.task[i].time}</div>
+            <div style="border:solid 1px; width:60px; padding:10px; padding-top:-5px; padding-bottom:-5px; overflow:auto; ">${model.input.schedule.task[i].workout}</div>
+            <div style="border:solid 1px; width:30px; padding:10px; padding-top:-5px; padding-bottom:-5px; ">${model.input.schedule.task[i].set}</div>
+            <div style="border:solid 1px; width:30px; padding:10px; padding-top:-5px; padding-bottom:-5px; ">${model.input.schedule.task[i].rep}</div>
         </div>
         `;
     }
