@@ -22,9 +22,9 @@ function settingsPage() {
         <option value= "metric"> Metric </option>
         <option value="imperial"> Imperial </option>
       </select>
-      <select id="dateFormat" onchange="selectDateOption()">
-        <option value="numeric">DD/MM/YYYY</option>
-        <option value="text">Day, Month, Year</option>
+      <select id="dateFormat" name="dateSelect"  onchange="selectDateOption()">
+        <option value="text"> Day, Month, Year </option>  
+        <option value="numeric"> DD/MM/YYYY </option>
       </select>
       <select id="timeFormat" name="timeSelect" onchange="updateTimeDiv()">
       <option value="12hr"> AM/PM </option>
