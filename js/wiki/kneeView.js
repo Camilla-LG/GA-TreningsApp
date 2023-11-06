@@ -4,6 +4,7 @@ function kneeView(){
 
     <div class="image-containerWiki">
     <h1>MuscleWiki</h1>
+    <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
    <!-- <img class="wikiShoulder" src="https://www.shoulder-pain-explained.com/images/shoulder-bones-anatomy.png"><img> -->
     <div class="treningsInfo">Knees <p> Kneøvelse går her
