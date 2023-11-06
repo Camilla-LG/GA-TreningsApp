@@ -24,7 +24,7 @@ function mainPage() {
             </div>
             <div>${drawPlan()}</div>
             <div style=" display:flex; flex-direction: row-reverse; margin-right:500px;">
-            <button style="width:100px;" onclick="finishDay('main')">Finish day</button>
+            <button style="width:100px;" onclick="finishDay('main'); showFeedback()">Finish day</button>
             </div>
         </div>
     </div>
