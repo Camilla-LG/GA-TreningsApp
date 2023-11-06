@@ -10,43 +10,48 @@ function scheduleView() {
         <input style="width:80px;" type="number" min="0" max="12" id="setCount" placeholder="Antall sett">
         <input style="width:80px;" type="number" min="0" max="100" id="repCount" placeholder="Antall reps"> <!-- Legg til dato-input -->
         <input type="time" id="taskTime"> <!-- Legg til tidspunkt-input -->
-        <input type="date" id="taskDate">
+        <label for="dateSelector"> Velg en dag: </label>
+        <select id="dateSelector" onchange="selectDateOption()"></select>
+
         <button onclick="addTask()">Legg til økt</button>
         <button onclick="finishDay('sch'); showFeedback()">End day</button>
         <ul id="taskList"></ul>
         
-        <div>Ukeplan</div> 
-        <table border="1">
+        <div>Ukeplan</div>
+        <table border="1" id="weekPlanTable">
         <tr id="rowOfDates">
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
         <tr>
-        <td>${updateTaskList()}</td>
-        <td>trening</td>
-        <td>fri</td>
-        <td>trening</td>
-        <td>trening</td>
-        <td>fri</td>
-        <td>fri</td>
+            <td>${updateTaskList()}</td>
+            <td>trening</td>
+            <td>fri</td>
+            <td>trening</td>
+            <td>trening</td>
+            <td>fri</td>
+            <td>fri</td>
         </tr>
         </table>
         
  <!-- OBS OBS! Denne ligger her foreløpig slik at vi ser at det fungerer,
-  da den ikke vil knytte seg opp mot function og select i settingsControl.view -->      
-        <select id="dateFormat" onchange="selectDateOption()">
-        <option value="numeric">DD/MM/YYYY</option>
-        <option value="text">Day, Month, Year</option>
-        </select>
+ da den ikke vil knytte seg opp mot function og select i settingsControl.view -->      
+ 
+ <select id="dateFormat" onchange="selectDateOption()">
+ <option value="numeric">DD/MM/YYYY</option>
+ <option value="text">Day, Month, Year</option>
+ </select>
  
         `;
-    selectDateOption();
-}
+        populateDateSelector(); 
+        selectDateOption();
+    }
+
 function addTask() {
     const taskInput = document.getElementById('taskInput');
     const setCount = document.getElementById('setCount');
@@ -115,6 +120,49 @@ function selectDateOption() {
         celle.textContent = chosenDateFormat;
     }
 }
+
+// function selectDateOption() {
+//     const dateSelector = document.getElementById("dateSelector");
+//     const selectedDate = new Date(dateSelector.value);
+
+//     const options = { weekday: 'long', year: 'numeric', month: '2-digit', day: '2-digit' };
+//     const datoerRad = document.getElementById("rowOfDates");
+
+//     for (let i = 0; i < 7; i++) {
+//         const dayDate = new Date(selectedDate);
+//         dayDate.setDate(selectedDate.getDate() + i);
+
+//         const chosenDateFormat = dayDate.toLocaleDateString(undefined, options); 
+//         const celle = datoerRad.cells[i];
+//         celle.textContent = chosenDateFormat;
+//     }
+// }
+
+
+function populateDateSelector() {
+    const dateSelector = document.getElementById("dateSelector");
+    const today = new Date();
+
+    for (let i = 0; i < 7; i++) {
+        const optionDate = new Date(today);
+        optionDate.setDate(today.getDate() + i);
+
+        const option = document.createElement("option");
+        const options = {weekday: 'long', day: '2-digit', month: '2-digit'};
+        option.value = optionDate.toISOString().split("T")[0];
+        option.textContent = optionDate.toLocaleDateString(undefined, options); 
+        dateSelector.appendChild(option);
+    }
+
+    // Sett standardverdien til dagens dato
+    const todayISO = today.toISOString().split("T")[0];
+    dateSelector.value = todayISO;
+}
+
+
+
+populateDateSelector();
+selectDateOption();
 
 function showFeedback(){
    alert("Sterkt jobba!");
