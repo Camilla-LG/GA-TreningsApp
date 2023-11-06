@@ -12,7 +12,7 @@ function scheduleView() {
         <input type="time" id="taskTime"> <!-- Legg til tidspunkt-input -->
         <input type="date" id="taskDate">
         <button onclick="addTask()">Legg til økt</button>
-        <button onclick="finishDay('sch')">End day</button>
+        <button onclick="finishDay('sch'); showFeedback()">End day</button>
         <ul id="taskList"></ul>
         
         <div>Ukeplan</div> 
@@ -90,7 +90,7 @@ function updateTaskList() {
     return html;
 }
 
-// OBS OBS! Ligge her midlertidig til vi har løst kommunikasjon mellom sidene
+// OBS OBS! Ligger her midlertidig til vi har løst kommunikasjon mellom sidene
 
 function selectDateOption() {
     const selectedDateFormat = document.getElementById("dateFormat").value;
@@ -116,5 +116,6 @@ function selectDateOption() {
     }
 }
 
-
-
+function showFeedback(){
+   alert("Sterkt jobba!");
+}
