@@ -16,37 +16,37 @@
 }
 
 .shoulderSelectionText:hover {
-  background-color: rgb(252, 223, 169);
+  background-color: lightsteelblue;
   width: 98px;
   color: black;
 }
 
 .armSelectionText:hover {
-  background-color: rgb(252, 223, 169);
+  background-color: lightsteelblue;
   width: 51px;
   color: black;
 }
 
 .chestSelectionText:hover {
-  background-color: rgb(252, 223, 169);
+  background-color: lightsteelblue;
   width: 53px;
   color: black;
 }
 
 .stomachSelectionText:hover {
-  background-color: rgb(252, 223, 169);
+  background-color:lightsteelblue;
   width: 85px;
   color: black;
 }
 
 .legSelectionText:hover {
-  background-color: rgb(252, 223, 169);
+  background-color:lightsteelblue;
   width: 43px;
   color: black;
 }
 
 .kneeSelectionText:hover {
-  background-color: rgb(252, 223, 169);
+  background-color:lightsteelblue;
   width: 59px;
   color: black;
 }
@@ -201,15 +201,25 @@
   bottom: -10%;
 }
 
-.wikiMenuButton {
+.wikiHeaderBackground {
   position: absolute;
-  right: 50%;
-  top: 20%;
-  width: 10%;
+  right: 30%;
+  top: 10%;
+  width: 35%;
   height: 10%;
   border-radius: 50%;
   border-color: blanchedalmond;
-  background-color: lightsteelblue;
+  background-color: lightgray;
+  z-index: -1;
+}
+
+.wikiMenuButton {
+  position: absolute;
+  right: 75%;
+  top: 10%;
+  width: 10%;
+  height: 10%;
+  border-color: blanchedalmond;
 }
 
 .videoDisplay {
@@ -231,7 +241,7 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 40px solid greenyellow;
+  border-bottom: 40px solid gray;
   transform: rotate(-90deg);
   bottom: -300px;
   left: 140px;
@@ -244,7 +254,7 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 40px solid greenyellow;
+  border-bottom: 40px solid grey;
   transform: rotate(90deg);
   bottom: -300px;
   left: 950px;

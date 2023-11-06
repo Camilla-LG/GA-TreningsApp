@@ -3,6 +3,7 @@ function armView(){
 
     <div class="image-containerWiki">
     <h1>MuscleWiki</h1>
+    <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
    <!-- <img class="wikiShoulder" src="https://www.shoulder-pain-explained.com/images/shoulder-bones-anatomy.png"><img> -->
     <div class="treningsInfo">Dumbbell bicep curl <p> Start standing with your feet shoulder-width apart holding a pair of dumbbells at your sides in a neutral grip (hands facing each other). 
