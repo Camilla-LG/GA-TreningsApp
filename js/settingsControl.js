@@ -52,28 +52,28 @@ function selectUnitOption() {
 //Med denne funksjonen, velger du hvordan du ønsker at datoen skal vises
 
 
-function selectDateOption(){
-  const selectedDateFormat = document.getElementById("dateFormat").value;
-  const rowOfDates = document.getElementById("rowOfDates");
-  const today = new Date();
-  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+// function selectDateOption(){
+//   const selectedDateFormat = document.getElementById("dateFormat").value;
+//   const rowOfDates = document.getElementById("rowOfDates");
+//   const today = new Date();
+//   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
-  for (let i = 0; i < 7; i++) {
-      const dayDate = new Date(today);
-      dayDate.setDate(today.getDate() + i);
+//   for (let i = 0; i < 7; i++) {
+//       const dayDate = new Date(today);
+//       dayDate.setDate(today.getDate() + i);
 
-      let chosenDateFormat;
+//       let chosenDateFormat;
 
-      if (selectedDateFormat === "numeric") {
-          chosenDateFormat = dayDate.toLocaleDateString();
-      } else if (selectedDateFormat === "text") {
-          chosenDateFormat = dayDate.toLocaleDateString(undefined, options);
-      }
+//       if (selectedDateFormat === "numeric") {
+//           chosenDateFormat = dayDate.toLocaleDateString();
+//       } else if (selectedDateFormat === "text") {
+//           chosenDateFormat = dayDate.toLocaleDateString(undefined, options);
+//       }
 
-      const celle = rowOfDates.cells[i];
-      celle.textContent = chosenDateFormat;
-  }
-}
+//       const celle = rowOfDates.cells[i];
+//       celle.textContent = chosenDateFormat;
+//   }
+// }
 
 // Kall funksjonen for å initialisere datoformatet når siden lastes
 selectDateOption();

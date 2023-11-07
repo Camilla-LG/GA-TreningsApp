@@ -4,7 +4,7 @@
     const month = currentDate.getMonth() + 1; 
     const year = currentDate.getFullYear();
   
-    if(model.input.schedule.task == ''){
+    if(model.input.schedule[0].task.length == 0){
       alert('No workouts found')
       return;
     }else {
