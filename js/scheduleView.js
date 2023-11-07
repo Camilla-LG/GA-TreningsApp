@@ -1,47 +1,41 @@
 function scheduleView() {
     document.getElementById('app').innerHTML =/*HTML*/ `
         <button onclick="mainPage()">X</button>
-        <h2>Dagens timeplan</h2>
-      
-
-        <h2>Legg til økt</h2>
-        <input type="text" id="taskInput" placeholder="Skriv inn øvelse">
-        <input style="width:80px;" type="number" min="0" max="12" id="setCount" placeholder="Antall sett">
-        <input style="width:80px;" type="number" min="0" max="100" id="repCount" placeholder="Antall reps"> <!-- Legg til dato-input -->
-        <input type="time" id="taskTime"> <!-- Legg til tidspunkt-input -->
-        <label for="dateSelector"> Velg en dag: </label>
-        <select id="dateSelector" onchange="selectDateOption()"></select>
-
-        <button onclick="addTask()">Legg til økt</button>
-        <button onclick="finishDay('sch'); showFeedback()">End day</button>
-        <ul id="taskList"></ul>
-        
-        <div>Ukeplan</div>
-        <table border="1" id="weekPlanTable">
-        <tr id="rowOfDates">
-            <th>Mandag</th>
-            <th>Tirsdag</th>
-            <th>Onsdag</th>
-            <th>Torsdag</th>
-            <th>Fredag</th>
-            <th>Lørdag</th>
-            <th>Søndag</th>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        </table>
-        
-        <select id="dateFormat" onchange="selectDateOption()">
-            <option value="numeric">DD/MM/YYYY</option>
-            <option value="text">Day, Month, Year</option>
+        <h1>Treningsplan</h1>
+        <label for="daySelector">Velg en dag: </label>
+        <select id="daySelector">
+            <option value="Mandag">Mandag</option>
+            <option value="Tirsdag">Tirsdag</option>
+            <option value="Onsdag">Onsdag</option>
+            <option value="Torsdag">Torsdag</option>
+            <option value="Fredag">Fredag</option>
+            <option value="Lørdag">Lørdag</option>
+            <option value="Søndag">Søndag</option>
         </select>
+        <input type="text" id="taskInput" placeholder="Legg til øvelse...">
+        <button onclick="addTask()">Legg til</button>
+    
+        <h2>Ukeplan</h2>
+        <table border="1">
+            <tr id="dateRow">
+                <th>Mandag</th>
+                <th>Tirsdag</th>
+                <th>Onsdag</th>
+                <th>Torsdag</th>
+                <th>Fredag</th>
+                <th>Lørdag</th>
+                <th>Søndag</th>
+            </tr>
+            <tr id="taskRow">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
         `;
     populateDateSelector(); 
     selectDateOption();
@@ -75,38 +69,62 @@ function scheduleView() {
 //     scheduleView()
 // }
 
-function addTask() {
+function addTask(){
     const taskInput = document.getElementById('taskInput');
-    const setCount = document.getElementById('setCount');
-    const repCount = document.getElementById('repCount');
-    const taskTime = document.getElementById('taskTime');
-    const dateSelector = document.getElementById('dateSelector');
-    
-    const selectedDate = new Date(dateSelector.value);
-    const options = { weekday: 'long' };
-    const dayOfWeek = selectedDate.toLocaleDateString(undefined, options).toLowerCase();
+    const selectedDay = document.getElementById('daySelector').value;
+    const taskRow = document.getElementById('taskRow');
+    const dateRow = document.getElementById('dateRow');
+    const dateCells = dateRow.cells;
+    const taskCells = taskRow.cells;
 
-    const weekPlanTable = document.getElementById('weekPlanTable');
-    const tableRow = weekPlanTable.rows[1];
-
-    for (let i = 0; i < tableRow.cells.length; i++) {
-        if (tableRow.cells[i].textContent.toLowerCase() == dayOfWeek) {
-            const tableCell = tableRow.cells[i];
-
-            const div = document.createElement('div');
-            div.textContent = `${taskInput.value}, Tid: ${taskTime.value}, Sett: ${setCount.value}, Reps: ${repCount.value}`;
-            div.style.margin = '5px';
-
-            tableCell.appendChild(div);
-
-            repCount.value = '';
-            taskInput.value = '';
-            setCount.value = '';
-            taskTime.value = '';
-            break; // Avslutt løkken når riktig dag er funnet
+    for (let i = 0; i < dateCells.length; i++) {
+        if (dateCells[i].textContent == selectedDay) {
+            const taskCell = taskCells[i];
+            const task = taskCell.textContent.split('\n');
+            task.push(taskInput.value);
+            taskCell.textContent = task.join('\n');
+            break;
         }
     }
 }
+
+            
+    // const taskInput = document.getElementById('taskInput');
+    // const setCount = document.getElementById('setCount');
+    // const repCount = document.getElementById('repCount');
+    // const taskTime = document.getElementById('taskTime');
+    // const selectedDay = document.getElementById('daySelector').value;
+    // const selectedDay = new Date(selectedDate.value);
+    // const dayOfWeek = selectedDay.toLocaleDateString(undefined, options).toLowerCase();
+    // const options = { weekday: 'long' };
+
+    // const dateRow = document.getElementById('dateRow');
+    // const taskRow = document.getElementById('taskRow');
+    // const dateCells = dateRow.cells;
+    // const taskCells = taskRow.cells;
+
+
+    // for (let i = 0; i < dateCells.length; i++) {
+    //     if (dateCells[i].textContent == dayOfWeek) {
+    //         const cell = taskCells[i];
+    //         const events = cell.textContent.split('\n');
+    //         events.push(taskInput.value);
+    //         cell.textContent = events.join('\n');
+
+            // const div = document.createElement('div');
+            // div.textContent = `${taskInput.value}, Tid: ${taskTime.value}, Sett: ${setCount.value}, Reps: ${repCount.value}`;
+            // div.style.margin = '5px';
+
+            // taskCell.appendChild(div);
+
+//             repCount.value = '';
+//             taskInput.value = '';
+//             setCount.value = '';
+//             taskTime.value = '';
+//             break; // Avslutt løkken når riktig dag er funnet
+//         }
+//     }
+// }
 
 
 
@@ -129,7 +147,7 @@ function updateTaskList() {
 
 function selectDateOption() {
     const selectedDateFormat = document.getElementById("dateFormat").value;
-    const rowOfDates = document.getElementById("rowOfDates");
+    const dateRow = document.getElementById("dateRow");
     const today = new Date();
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     const optionsNum = {weekday:'long', day: 'numeric', month: 'numeric'}
@@ -147,7 +165,7 @@ function selectDateOption() {
             chosenDateFormat = dayDate.toLocaleDateString(undefined, options);
         }
 
-        const celle = rowOfDates.cells[i];
+        const celle = dateRow.cells[i];
         celle.textContent = chosenDateFormat;
     }
 }
