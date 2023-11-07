@@ -15,39 +15,33 @@
 }
 
 .shoulderSelectionText:hover {
-  background-color: lightsteelblue;
+  cursor: pointer;
   width: 98px;
-  color: black;
 }
 
 .armSelectionText:hover {
-  background-color: lightsteelblue;
+  cursor: pointer;
   width: 51px;
-  color: black;
 }
 
 .chestSelectionText:hover {
-  background-color: lightsteelblue;
+  cursor: pointer;
   width: 53px;
-  color: black;
 }
 
 .stomachSelectionText:hover {
-  background-color:lightsteelblue;
+  cursor: pointer;
   width: 85px;
-  color: black;
 }
 
 .legSelectionText:hover {
-  background-color:lightsteelblue;
+  cursor: pointer;
   width: 43px;
-  color: black;
 }
 
 .kneeSelectionText:hover {
-  background-color:lightsteelblue;
+  cursor: pointer;
   width: 59px;
-  color: black;
 }
 
 .image-container {
@@ -208,7 +202,7 @@
   height: 10%;
   border-radius: 50%;
   border-color: blanchedalmond;
-  background-color: lightgray;
+  background-color: lightsteelblue;;
   z-index: -1;
 }
 
@@ -216,8 +210,8 @@
   position: absolute;
   right: 75%;
   top: 9.5%;
-  width: 9%;
-  height: 9%;
+  width: 8%;
+  height: 8%;
   border-color: blanchedalmond;
 }
 
@@ -240,7 +234,7 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 40px solid gray;
+  border-bottom: 40px solid  darkgrey;
   transform: rotate(-90deg);
   bottom: -300px;
   left: 140px;
@@ -253,7 +247,7 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 40px solid grey;
+  border-bottom: 40px solid darkgrey;
   transform: rotate(90deg);
   bottom: -300px;
   left: 950px;
