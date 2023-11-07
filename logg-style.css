@@ -1,0 +1,55 @@
+
+  .log-button {
+    background-color: #020827; 
+    color: rgb(245, 239, 239); 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+  }
+
+  .log-button:hover {
+    background-color: #0a1286; 
+  }
+
+  .log-input {
+  background-color: rgb(219, 215, 215);
+    padding: 5px; 
+    width: 200px; 
+  }
+
+  .week-button {
+    background-color: #020827; 
+    color: rgb(245, 239, 239); 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+  }
+  .week-button:hover {
+    background-color: #0a1286; 
+  }
+
+  .log-h1{
+    font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #070644, #58565e);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  }
+
+  .background-image {
+    display: none;
+    background-image: url('gym-workout.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set the height of the element to fill the viewport */
+}
+/*body {
+    margin: 0;
+    padding: 0;
+    background-image: url('gym-workout.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
