@@ -7,7 +7,7 @@ function scheduleView() {
         <h2>Legg til økt</h2>
         <input type="text" id="taskInput" placeholder="Skriv inn øvelse">
         <input style="width:80px;" type="number" min="0" max="12" id="setCount" placeholder="Antall sett">
-        <input style="width:80px;" type a number" min="0" max="100" id="repCount" placeholder="Antall reps"> <!-- Legg til dato-input -->
+        <input style="width:80px;" type="number" min="0" max="100" id="repCount" placeholder="Antall reps"> <!-- Legg til dato-input -->
         <input type="time" id="taskTime"> <!-- Legg til tidspunkt-input -->
         <label for="dateSelector"> Velg en dag: </label>
         <select id="dateSelector" onchange="selectDateOption()"></select>
