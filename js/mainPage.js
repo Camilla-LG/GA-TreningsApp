@@ -35,19 +35,18 @@ function mainPage() {
 
 function drawPlan() {
     let html = '';
-    
-    for (let i = 0; i < model.input.schedule.task.length; i++) {
-        let checked = model.input.schedule.task[i].isDone !== true?'':'checked';
+    for (let i = 0; i < model.app.loggedInUser.schedule[0].task.length; i++) {
+        let checked = model.app.loggedInUser.schedule[0].task[i].isDone !== true ? '':'checked';
         html += /*HTML*/`
         <div style="display:flex;flex-direction:row;">
-            <div class="generalBox" style="margin-left:420px; width:40px">${model.input.schedule.task[i].time}</div>
-            <div class="generalBox" style="margin-left:10px;  width:55px">${model.input.schedule.task[i].workout}</div>
-            <div class="generalBox" style="margin-left:10px;  width:30px">${model.input.schedule.task[i].set}</div>
-            <div class="generalBox" style="margin-left:10px;  width:30px">${model.input.schedule.task[i].rep}</div>
+            <div class="generalBox" style="margin-left:420px; width:40px">${model.app.loggedInUser.schedule[0].task[i].time}</div>
+            <div class="generalBox" style="margin-left:10px;  width:55px">${model.app.loggedInUser.schedule[0].task[i].workout}</div>
+            <div class="generalBox" style="margin-left:10px;  width:30px">${model.app.loggedInUser.schedule[0].task[i].set}</div>
+            <div class="generalBox" style="margin-left:10px;  width:30px">${model.app.loggedInUser.schedule[0].task[i].rep}</div>
             <br>
             <div class="checkbox ${checked}" onclick="toggleCheckbox(${i})"></div>
         </div>
         `;
     }
-    return model.input.schedule.task.length == '' ? 'No tasks added yet' : html;
+    return model.app.loggedInUser.schedule[0].task.length == 0 ? 'No tasks added yet' : html;
 }

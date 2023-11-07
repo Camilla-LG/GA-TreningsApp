@@ -84,13 +84,13 @@ function addTask() {
     
     const selectedDate = new Date(dateSelector.value);
     const options = { weekday: 'long' };
-    const dayOfWeek = selectedDate.toLocaleDateString('en-US', options).toLowerCase();
+    const dayOfWeek = selectedDate.toLocaleDateString(undefined, options).toLowerCase();
 
     const weekPlanTable = document.getElementById('weekPlanTable');
     const tableRow = weekPlanTable.rows[1];
 
     for (let i = 0; i < tableRow.cells.length; i++) {
-        if (tableRow.cells[i].textContent.toLowerCase() === dayOfWeek) {
+        if (tableRow.cells[i].textContent.toLowerCase() == dayOfWeek) {
             const tableCell = tableRow.cells[i];
 
             const div = document.createElement('div');
@@ -141,9 +141,9 @@ function selectDateOption() {
         dayDate.setDate(today.getDate() + i);
 
 
-        if (selectedDateFormat === "numeric") {
+        if (selectedDateFormat == "numeric") {
             chosenDateFormat = dayDate.toLocaleDateString(undefined, optionsNum);
-        } else if (selectedDateFormat === "text") {
+        } else if (selectedDateFormat == "text") {
             chosenDateFormat = dayDate.toLocaleDateString(undefined, options);
         }
 
@@ -172,10 +172,6 @@ function populateDateSelector() {
     dateSelector.value = todayISO;
 }
 
-
-
-populateDateSelector();
-selectDateOption();
 
 function showFeedback(){
    alert("Sterkt jobba!");
