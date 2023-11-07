@@ -43,10 +43,24 @@ const model = {
         days: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
         programDetails: ["fullbody", "chest", "shoulders"],
       },],
-      schedule: {
-        dato: '',
-        task: []
-      },
+      // schedule: {
+      //   dato: '',
+      //   task: []
+      // },
+      schedule: [
+        {
+          dato: '2023-11-01',
+          task: [
+            {
+              time: '11:30',
+              workout: 'squats',
+              log: '',
+              set: 3,
+              rep: 10
+            },
+          ],
+        },
+      ],
       currentLog: 0,
       log: [{
         dato: '2023-10-29',
@@ -113,16 +127,16 @@ const model = {
       schedule: [],
     },
 
-    schedule: {
+    schedule: [{
       dato: '',
       task: [          {
         time: '12:30',
         workout: 'squats',
         log: '',
-        set: 2,
-        rep: 10
+        set: null,
+        rep: null
       }],
-    },
+    }],
 
     editProfileImg: "",
   },

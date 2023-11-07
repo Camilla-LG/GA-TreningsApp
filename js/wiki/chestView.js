@@ -2,9 +2,10 @@ function chestView(){
     document.getElementById('app').innerHTML = /*HTML*/`
 
     <div class="image-containerWiki">
-    <h1>MuscleWiki</h1>
+    <h1 class="wikiHeaderText">MuscleWiki</h1>
     <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
+<<<<<<< HEAD
    <!-- <img class="wikiShoulder" src="https://www.shoulder-pain-explained.com/images/shoulder-bones-anatomy.png"><img> -->
     <div class="treningsInfo">Chest <h1>Chest</h1><p>If you want to build strong chest muscles, there is no way you can ignore the chest press exercise. In fact, it is one of the basic exercises that gym trainers suggest adding to the chest workout when you are just starting out. 
 
@@ -16,6 +17,10 @@ function chestView(){
     <li>Serratus Anterior: The serratus anterior is a muscle of the anterior chest wall. It forms the medial border of the axilla region. Attachments: The muscle consists of several strips, which originate from the lateral aspects of ribs 1-8. surface of the medial border of the scapula.</li>
     <li>Biceps: The biceps  is a large muscle that lies on the front of the upper arm between the shoulder and the elbow.</li>
     </ul>
+=======
+
+    <div class="treningsInfo">Chest <p> Brystøvelse går her
+>>>>>>> 13054575ae977a1aeb3f6669bca07d513e83553e
     </div>
 
     <iframe class="videoDisplay" id="videoId" width="632" height="355.5" src="https://www.youtube.com/embed/mv42SYX9A3U" title="7 Huge chest exercises ( fastest )" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

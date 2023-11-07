@@ -15,39 +15,33 @@
 }
 
 .shoulderSelectionText:hover {
-  background-color: lightsteelblue;
+  cursor: pointer;
   width: 98px;
-  color: black;
 }
 
 .armSelectionText:hover {
-  background-color: lightsteelblue;
+  cursor: pointer;
   width: 51px;
-  color: black;
 }
 
 .chestSelectionText:hover {
-  background-color: lightsteelblue;
+  cursor: pointer;
   width: 53px;
-  color: black;
 }
 
 .stomachSelectionText:hover {
-  background-color:lightsteelblue;
+  cursor: pointer;
   width: 85px;
-  color: black;
 }
 
 .legSelectionText:hover {
-  background-color:lightsteelblue;
+  cursor: pointer;
   width: 43px;
-  color: black;
 }
 
 .kneeSelectionText:hover {
-  background-color:lightsteelblue;
+  cursor: pointer;
   width: 59px;
-  color: black;
 }
 
 .image-container {
@@ -200,6 +194,9 @@
   bottom: -10%;
 }
 
+.wikiHeaderText{
+  color: red;
+}
 .wikiHeaderBackground {
   position: absolute;
   right: 30%;
@@ -207,8 +204,9 @@
   width: 35%;
   height: 10%;
   border-radius: 50%;
-  border-color: blanchedalmond;
-  background-color: lightgray;
+  border-color: whitesmoke;
+  background-color:whitesmoke;
+  color: lightslategray;
   z-index: -1;
 }
 
@@ -216,9 +214,8 @@
   position: absolute;
   right: 75%;
   top: 9.5%;
-  width: 9%;
-  height: 9%;
-  border-color: blanchedalmond;
+  width: 25px;
+  height: 25px;
 }
 
 .videoDisplay {
@@ -226,7 +223,6 @@
   top: 120%;
   left: 50%;
 }
-
 .treningsInfo {
   position: absolute;
   left: 50%;
@@ -240,20 +236,19 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 40px solid gray;
+  border-bottom: 40px solid  blue;
   transform: rotate(-90deg);
   bottom: -300px;
   left: 140px;
   cursor: pointer;
 }
-
 .nextArrow {
   position: absolute;
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 40px solid grey;
+  border-bottom: 40px solid blue;
   transform: rotate(90deg);
   bottom: -300px;
   left: 950px;
