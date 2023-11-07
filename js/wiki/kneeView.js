@@ -18,7 +18,7 @@ function kneeView(){
 
     <!-- Piler med funksjonalitet til å bytte video -->
     <div class="prevArrow" id="prevArrow" onclick="selectExcercise(this)" videoUrl="https://www.youtube.com/embed/RzL-mqiQW8M"></div>
-    <div class="nextArrow" id="nextArrow" onclick="selectExcercise(this)" videoUrl="https://www.youtube.com/embed/_q_-adYzkh0"></div>
+    <div class="nextArrow" id="nextArrow" onclick="selectExcercise(this)" videoUrl="https://www.youtube.com/embed/_dE_awk1CUs"></div>
 
     </div>
     `;
