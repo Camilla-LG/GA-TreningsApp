@@ -123,3 +123,13 @@ select {
 }
 
 /* schedule */
+
+th {
+    height: 40px;
+    width: 170px;
+}
+
+td {
+    height: 200px;
+    width: 170px;
+}
