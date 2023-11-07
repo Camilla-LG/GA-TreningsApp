@@ -12,7 +12,9 @@ function scheduleView() {
             <option value="Lørdag">Lørdag</option>
             <option value="Søndag">Søndag</option>
         </select>
-        <input type="text" id="taskInput" placeholder="Legg til øvelse...">
+        <label> Øvelse: </label> <input type="text" id="taskInput" placeholder="Legg til øvelse...">
+        <label> Antall set: </label> <input type="number" min="0" max="12" id="setCount">
+        <label> Antall reps: </label> <input type="number" min="0" max="12" id="repCount">
         <button onclick="addTask()">Legg til</button>
     
         <h2>Ukeplan</h2>
@@ -71,6 +73,8 @@ function scheduleView() {
 
 function addTask(){
     const taskInput = document.getElementById('taskInput');
+    const setInput = document.getElementById('setCount');
+    const repInput = document.getElementById('repCount');
     const selectedDay = document.getElementById('daySelector').value;
     const taskRow = document.getElementById('taskRow');
     const dateRow = document.getElementById('dateRow');
@@ -79,9 +83,13 @@ function addTask(){
 
     for (let i = 0; i < dateCells.length; i++) {
         if (dateCells[i].textContent == selectedDay) {
+            let html = /*HTML*/`
+                <li>Øvelse:${taskInput.value}</li>
+                <div>Antall set:${setInput.value} Antall reps:${repInput.value}</div>
+            `;
             const taskCell = taskCells[i];
             const task = taskCell.textContent.split('\n');
-            task.push(taskInput.value);
+            task.push(html);
             taskCell.textContent = task.join('\n');
             break;
         }
