@@ -194,6 +194,9 @@
   bottom: -10%;
 }
 
+.wikiHeaderText{
+  color: red;
+}
 .wikiHeaderBackground {
   position: absolute;
   right: 30%;
@@ -201,8 +204,9 @@
   width: 35%;
   height: 10%;
   border-radius: 50%;
-  border-color: blanchedalmond;
-  background-color: lightsteelblue;;
+  border-color: whitesmoke;
+  background-color:whitesmoke;
+  color: lightslategray;
   z-index: -1;
 }
 
@@ -210,9 +214,8 @@
   position: absolute;
   right: 75%;
   top: 9.5%;
-  width: 8%;
-  height: 8%;
-  border-color: blanchedalmond;
+  width: 25px;
+  height: 25px;
 }
 
 .videoDisplay {
@@ -220,7 +223,6 @@
   top: 120%;
   left: 50%;
 }
-
 .treningsInfo {
   position: absolute;
   left: 50%;
@@ -234,20 +236,19 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 40px solid  darkgrey;
+  border-bottom: 40px solid  blue;
   transform: rotate(-90deg);
   bottom: -300px;
   left: 140px;
   cursor: pointer;
 }
-
 .nextArrow {
   position: absolute;
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 40px solid darkgrey;
+  border-bottom: 40px solid blue;
   transform: rotate(90deg);
   bottom: -300px;
   left: 950px;
