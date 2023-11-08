@@ -3,7 +3,7 @@ function kneeView(){
     document.getElementById('app').innerHTML = /*HTML*/`
 
     <div class="image-containerWiki">
-    <h1>MuscleWiki</h1>
+    <h1 class="wikiHeaderText">MuscleWiki</h1>
     <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
    
