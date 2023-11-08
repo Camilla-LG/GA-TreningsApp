@@ -6,7 +6,7 @@ function legView(){
     <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
     
-    <div class="treningsInfo">Legs <p> <li>Dype step-ups: Bruk en stepkasse eller en lav benk. Trinn opp med en fot, så det andre benet følger etter. Gå helt opp og senk deg ned igjen. Gjenta på begge sider.</li>
+    <div class="treningsInfo"> <h1>Legs</h1> <p> <li>Dype step-ups: Bruk en stepkasse eller en lav benk. Trinn opp med en fot, så det andre benet følger etter. Gå helt opp og senk deg ned igjen. Gjenta på begge sider.</li>
     <li>Calf Raises: Stå med føttene flatt på bakken og løft kroppen opp på tærne. Senk deretter hælene tilbake til startposisjonen og gjenta.</li>
     <li>Kettlebell Swings: Bruk en kettlebell og sving den mellom bena dine ved å bøye deg i hofta og kneposisjon. Bruk hoftebevegelse til å svinge kettlebellen opp til skulderhøyde.</li>
      </div>
