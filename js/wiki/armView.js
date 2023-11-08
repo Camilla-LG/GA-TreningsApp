@@ -5,7 +5,6 @@ function armView(){
     <h1 class="wikiHeaderText">MuscleWiki</h1>
     <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
-    
     <div class="treningsInfo">Arm<p>En av fordelene med å trene armer er at du ofte får sterkere rygg, skuldre og bryst med på kjøpet. Grunnen til dette er fordi mange av musklene i armene samarbeider med hele overkroppen.
 
     <ul>
