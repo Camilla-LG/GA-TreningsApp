@@ -7,7 +7,6 @@ function shoulderView(){
     <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
     
-    <img class="wikiShoulder" src="https://www.shoulder-pain-explained.com/images/shoulder-bones-anatomy.png"><img>
     <div class="treningsInfo"> <h1>Shoulder</h1><p> A shoulder workout at gym is for everyone. Whether you want just good looks or you want to prevent training-related injuries, a shoulder gym workout is going to benefit you no matter what your ultimate goal is. And the best part - there are a ton of exercises that you can add to your shoulder workout. 
     When you add various shoulder exercises to your workout, you increase your chances of sticking to it. 
     <ul style="font-size 14px">
