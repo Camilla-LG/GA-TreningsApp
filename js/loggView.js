@@ -1,7 +1,7 @@
 function loggView() {
     let loggHtml = /*HTML*/`
     <button onclick="mainPage()">X</button>
-    <h1>Choose week</h1>
+    <h1>Velg dag</h1>
     <input type="text">
     <div style="witdh: fit-content; overflow: auto;">
         ${drawLoggInv()}
