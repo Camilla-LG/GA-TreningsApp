@@ -6,7 +6,7 @@ function stomachView(){
     <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
     
-    <div class="treningsInfo"><h1>Stomach</h1> <p>   
+    <div class="treningsInfo"><h1>Mage</h1> <p>   
     <li>Crunches: Ligge på ryggen med bøyde knær og føttene flatt på bakken. Plasser hendene bak hodet eller over brystet og løft skuldrene fra gulvet ved å bruke magemusklene. Senk deg tilbake til startposisjonen uten å hvile helt på gulvet mellom gjentakelsene.</li>
     <li>Beinhev: Ligg på ryggen og løft langsomt bena opp mot taket mens du holder dem rette. Senk dem deretter kontrollert tilbake til startposisjonen uten å la dem berøre gulvet.</li>
     </div>

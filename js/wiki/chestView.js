@@ -6,10 +6,10 @@ function chestView(){
     <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
   
-    <div class="treningsInfo">Chest <h1>Chest</h1>
+    <div class="treningsInfo"> <h1>Bryst</h1>
     
     <p>Hvis du vil bygge sterke brystmuskler, er det ingen vei utenom brystpress-øvelsen. Faktisk er det en av de grunnleggende øvelsene som trenere på treningssentre foreslår å legge til i brysttreningen når du nettopp har begynt.</p>
-    <p>Å opprettholde riktig form er et must når du gjør brystpress-øvelsen. Ellers risikerer du å legge press på ulike muskelgrupper i kroppen.</p>
+    
     <ul style="font-size: 14px">
     <li>Pectoralis: Pectoralis major er den øverste og største muskelen på fremsiden av brystveggen. Det er en tykk, vifteformet muskel som ligger under brystvevet og danner den fremre veggen av armhulen.</li>
     <li>Deltamuskel: Den tykke muskelen som danner den avrundede konturen på utsiden av skulderen og bidrar til å løfte armen.</li>

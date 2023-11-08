@@ -7,7 +7,7 @@ function kneeView(){
     <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
    
-    <div class="treningsInfo"> <h1>Knees</h1><p> 
+    <div class="treningsInfo"> <h1>Knær</h1><p> 
     <ul>
     <li>Box Jumps: Hopp opp på en boks eller plattform og land mykt, deretter hopp ned igjen og gjenta </li>
     <li>Leg Press: Dette kan utføres på en maskin på treningssenteret. Sitte og dytte vekter vekk med bena. Pass på å bruke passende vekter og teknikk for å unngå belastning på knærne.</li>
