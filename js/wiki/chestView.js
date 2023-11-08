@@ -6,15 +6,16 @@ function chestView(){
     <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
   
-    <div class="treningsInfo">Chest <h1>Chest</h1><p>If you want to build strong chest muscles, there is no way you can ignore the chest press exercise. In fact, it is one of the basic exercises that gym trainers suggest adding to the chest workout when you are just starting out. 
-
-    Maintaining the proper form is a must while doing the chest press exercise. Otherwise, you might end up putting pressure on various muscle groups in your body.
+    <div class="treningsInfo"> <h1>Bryst</h1>
+    
+    <p>Hvis du vil bygge sterke brystmuskler, er det ingen vei utenom brystpress-øvelsen. Faktisk er det en av de grunnleggende øvelsene som trenere på treningssentre foreslår å legge til i brysttreningen når du nettopp har begynt.</p>
+    
     <ul style="font-size: 14px">
-    <li>Pectorals: The pectoralis major is the superior most and largest muscle of the anterior chest wall. It is a thick, fan-shaped muscle that lies underneath the breast tissue and forms the anterior wall of the axilla.</li>
-    <li>Deltoids: The thick muscle forming the rounded contour of the outer edge of the shoulder and acting to raise the arm</li>
-    <li>Triceps: The main function of triceps brachii is extension of the forearm at the elbow joint. In addition, its long head contributes to the extension and adduction of the arm at the shoulder joint.</li>
-    <li>Serratus Anterior: The serratus anterior is a muscle of the anterior chest wall. It forms the medial border of the axilla region. Attachments: The muscle consists of several strips, which originate from the lateral aspects of ribs 1-8. surface of the medial border of the scapula.</li>
-    <li>Biceps: The biceps  is a large muscle that lies on the front of the upper arm between the shoulder and the elbow.</li>
+    <li>Pectoralis: Pectoralis major er den øverste og største muskelen på fremsiden av brystveggen. Det er en tykk, vifteformet muskel som ligger under brystvevet og danner den fremre veggen av armhulen.</li>
+    <li>Deltamuskel: Den tykke muskelen som danner den avrundede konturen på utsiden av skulderen og bidrar til å løfte armen.</li>
+    
+    <li>Serratus Anterior: Serratus anterior er en muskel på fremsiden av brystveggen. Den danner den mediale grensen av armhulen. Fester: Muskelen består av flere strimler som har utspring fra de laterale delene av ribbeina 1-8 og overflaten av den mediale grensen av skulderbladet.</li>
+    
     </ul>
     </div>
 

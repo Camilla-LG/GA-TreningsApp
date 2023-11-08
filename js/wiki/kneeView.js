@@ -6,16 +6,12 @@ function kneeView(){
     <h1>MuscleWiki</h1>
     <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
-   <!-- <img class="wikiShoulder" src="https://www.shoulder-pain-explained.com/images/shoulder-bones-anatomy.png"><img> -->
-    <div class="treningsInfo">Knees <h1>Knees</h1><p> Being one of the most used joints in your body, your knees get subjected to overwork and stress. Not just this, your knees also support your entire body weight. This is the reason why this, the largest and the most complex joint, often gets ridden with pain and weakness. Other reasons for this include:
+   
+    <div class="treningsInfo"> <h1>Knær</h1><p> 
     <ul>
-    <li>Ageing</li>
-    <li>Arthritis</li>
-    <li>Injury, strain, or sprains</li>
-    <li>Damaged or torn cartilage and ligaments</li>
-    <li>Lack of exercise</li>
-    <li>Tendonitis</li>
-    <li>Repeated knee movements </li>
+    <li>Box Jumps: Hopp opp på en boks eller plattform og land mykt, deretter hopp ned igjen og gjenta </li>
+    <li>Leg Press: Dette kan utføres på en maskin på treningssenteret. Sitte og dytte vekter vekk med bena. Pass på å bruke passende vekter og teknikk for å unngå belastning på knærne.</li>
+    <li>Knebøy: Stå med føttene litt bredere enn skulderbredde, senk kroppen som om du setter deg på en stol ved å bøye knærne og senke hofta. Vær oppmerksom på å holde ryggen rett under øvelsen.</li>
     </ul>
      </div>
     
