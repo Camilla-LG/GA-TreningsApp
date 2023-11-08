@@ -7,6 +7,9 @@
   font-size: 22px;
 }
 
+.wikiSelectionTextHeader{
+font-size: 35px;
+}
 .wikiSelectionText {
   position: absolute;
   font-size: 25px;
