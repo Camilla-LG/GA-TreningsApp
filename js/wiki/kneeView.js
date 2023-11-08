@@ -6,7 +6,7 @@ function kneeView(){
     <h1>MuscleWiki</h1>
     <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
-   <!-- <img class="wikiShoulder" src="https://www.shoulder-pain-explained.com/images/shoulder-bones-anatomy.png"><img> -->
+   
     <div class="treningsInfo">Knees <h1>Knees</h1><p> Being one of the most used joints in your body, your knees get subjected to overwork and stress. Not just this, your knees also support your entire body weight. This is the reason why this, the largest and the most complex joint, often gets ridden with pain and weakness. Other reasons for this include:
     <ul>
     <li>Ageing</li>
