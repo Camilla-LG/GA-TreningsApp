@@ -25,19 +25,18 @@ const model = {
     ],
 
     //Profilen som er pålogget vil ha alle disse tingene tilgjengelig
-    //Tøm dummydata før GOtime
     loggedInUser: {
       Id: 0,
       userName: "Test",
       password: "ave",
-      profileName: "Testtttt",
+      profileName: "Navn",
       profileImg: `https://static1.srcdn.com/wordpress/wp-content/uploads/2021/08/Ryan-Reynolds-in-Free-Guy.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5`,
       homeTown: "Test Sted",
-      age: "20",
-      sex: "Female",
-      height: "175",
-      weight: "75",
-      aboutMe: "info",
+      age: "Alder",
+      sex: "", 
+      height: "Høyde(cm)",
+      weight: "Vekt(kg)",
+      aboutMe: "Bio",
       workoutprogram: [{
         weeks: ["one", "two", "three", "four"],
         days: ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"],
