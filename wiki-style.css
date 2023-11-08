@@ -7,11 +7,15 @@
   font-size: 22px;
 }
 
+.wikiSelectionTextHeader{
+font-size: 35px;
+}
 .wikiSelectionText {
   position: absolute;
   font-size: 25px;
   top: 100px;
   left: 50px;
+  line-height: 1.5
 }
 
 .shoulderSelectionText:hover {

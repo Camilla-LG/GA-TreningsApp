@@ -9,7 +9,7 @@ function wikiPage(){
     
     <!-- tekstinnhold med valgmuligheter -->
     <div class="wikiSelectionText">
-    <div>Planlegg din treningsøkt</div>
+    <div class="wikiSelectionTextHeader">Planlegg din treningsøkt</div>
     <p>
     <div id="shoulderDiv"class="shoulderSelectionText" onclick="shoulderView()">Skuldre</div>
     <div id="armDiv"class="armSelectionText" onclick="armView()">Armer</div>
