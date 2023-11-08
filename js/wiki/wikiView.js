@@ -4,19 +4,19 @@ function wikiPage(){
 
     <!-- knapp for å gå tilbake til mainPage -->
     <button class="wikiExitButton"onclick="mainPage()">X</button>
-    <span class="wikiSpan">Main Page</span>
+    <span class="wikiSpan">Hovedside</span>
     <p>
     
     <!-- tekstinnhold med valgmuligheter -->
     <div class="wikiSelectionText">
-    <div>What is the focus of your workout?</div>
+    <div>Planlegg din treningsøkt</div>
     <p>
-    <div id="shoulderDiv"class="shoulderSelectionText" onclick="shoulderView()">shoulders</div>
-    <div id="armDiv"class="armSelectionText" onclick="armView()">arms</div>
-    <div id="chestDiv"class="chestSelectionText" onclick="chestView()">chest</div>
-    <div id="stomachDiv"class="stomachSelectionText" onclick="stomachView()">stomach</div>
-    <div id="kneeDiv"class="kneeSelectionText" onclick="kneeView()">knees</div>
-    <div id="legDiv"class="legSelectionText" onclick="legView()">legs</div>
+    <div id="shoulderDiv"class="shoulderSelectionText" onclick="shoulderView()">Skuldre</div>
+    <div id="armDiv"class="armSelectionText" onclick="armView()">Armer</div>
+    <div id="chestDiv"class="chestSelectionText" onclick="chestView()">Bryst</div>
+    <div id="stomachDiv"class="stomachSelectionText" onclick="stomachView()">Mage</div>
+    <div id="kneeDiv"class="kneeSelectionText" onclick="kneeView()">Knær</div>
+    <div id="legDiv"class="legSelectionText" onclick="legView()">Ben</div>
     </div>
 
     <div class="image-container">
