@@ -1,6 +1,7 @@
 function scheduleView() {
     document.getElementById('app').innerHTML =/*HTML*/ `
         <button onclick="mainPage()">X</button>
+        <span class="wikiSpan">Hovedside</span>
         <h1>Treningsplan</h1>
         <label for="daySelector">Velg en dag: </label>
         <select id="daySelector">
