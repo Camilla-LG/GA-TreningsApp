@@ -8,14 +8,11 @@ function chestView(){
   
     <div class="treningsInfo"> <h1>Bryst</h1>
     
-    <p>Hvis du vil bygge sterke brystmuskler, er det ingen vei utenom brystpress-øvelsen. Faktisk er det en av de grunnleggende øvelsene som trenere på treningssentre foreslår å legge til i brysttreningen når du nettopp har begynt.</p>
-    
-    <ul style="font-size: 14px">
-    <li>Pectoralis: Pectoralis major er den øverste og største muskelen på fremsiden av brystveggen. Det er en tykk, vifteformet muskel som ligger under brystvevet og danner den fremre veggen av armhulen.</li>
-    <li>Deltamuskel: Den tykke muskelen som danner den avrundede konturen på utsiden av skulderen og bidrar til å løfte armen.</li>
-    
-    <li>Serratus Anterior: Serratus anterior er en muskel på fremsiden av brystveggen. Den danner den mediale grensen av armhulen. Fester: Muskelen består av flere strimler som har utspring fra de laterale delene av ribbeina 1-8 og overflaten av den mediale grensen av skulderbladet.</li>
-    
+    <ul>
+    <li>Benkpress: Ligge på en benk og løfte en vektstang opp og ned fra brystet. Dette kan gjøres med en stang eller manualer.</li>
+    <li>Dips: Bruk en dip-stativ eller to stabile overflater. Senk kroppen ned ved å bøye albuene og press deretter opp igjen.</li>
+    <li>Decline Push-Ups: Gjør push-ups med føttene høyere enn hodet, for eksempel ved å plassere føttene på en lav benk. Dette fokuserer mer på nedre del av brystet.</li>
+    <li>Incline Bench Press: Ligge på en benk som er vinklet oppover, og gjenta benkpressbevegelsen. Dette fokuserer mer på øvre del av brystet.</li>
     </ul>
     </div>
 
