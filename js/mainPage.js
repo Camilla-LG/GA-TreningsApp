@@ -17,8 +17,7 @@ function mainPage() {
         <div class="nextWorkout">
             <h3>Dagens plan</h3>
             <div style="display:flex;flex-direction:row;">
-                <div class="generalBox" style=" margin-left: 420px; width:40px;">Time</div>
-                <div class="generalBox" style=" margin-left: 10px; width: 55px;">Workout</div>
+                <div class="generalBox" style=" margin-left: 420px; width: 55px;">Workout</div>
                 <div class="generalBox" style=" margin-left: 10px; width:30px;">Sets</div>
                 <div class="generalBox" style=" margin-left: 10px; width:30px;">Reps</div>
             </div>
@@ -39,8 +38,8 @@ function drawPlan() {
         let checked = model.app.loggedInUser.schedule[0].task[i].isDone !== true ? '':'checked';
         html += /*HTML*/`
         <div style="display:flex;flex-direction:row;">
-            <div class="generalBox" style="margin-left:420px; width:40px">${model.app.loggedInUser.schedule[0].task[i].time}</div>
-            <div class="generalBox" style="margin-left:10px;  width:55px">${model.app.loggedInUser.schedule[0].task[i].workout}</div>
+            
+            <div class="generalBox" style="margin-left:420px;  width:55px">${model.app.loggedInUser.schedule[0].task[i].workout}</div>
             <div class="generalBox" style="margin-left:10px;  width:30px">${model.app.loggedInUser.schedule[0].task[i].set}</div>
             <div class="generalBox" style="margin-left:10px;  width:30px">${model.app.loggedInUser.schedule[0].task[i].rep}</div>
             <br>
