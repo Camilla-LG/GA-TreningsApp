@@ -8,15 +8,10 @@ function shoulderView(){
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
     
     <img class="wikiShoulder" src="https://www.shoulder-pain-explained.com/images/shoulder-bones-anatomy.png"><img>
-    <div class="treningsInfo"> <h1>Shoulder</h1><p> A shoulder workout at gym is for everyone. Whether you want just good looks or you want to prevent training-related injuries, a shoulder gym workout is going to benefit you no matter what your ultimate goal is. And the best part - there are a ton of exercises that you can add to your shoulder workout. 
-    When you add various shoulder exercises to your workout, you increase your chances of sticking to it. 
+    <div class="treningsInfo"> <h1>Skulder</h1><p> De fleste øvelsene for skuldrene er pressøvelser og vanligvis betyr å presse vekter over eller bort fra kroppen slik som militærpress og sidhev. Andre øvelser er fronthev og stående roing.
     <ul style="font-size 14px">
-    <li>Trapezius: It connects your shoulders and supports the neck. </li>
-    <li>Deltoid Muscles: This includes three types of muscles: anterior deltoid, lateral deltoid, and posterior deltoid. </li>
-    <li>Pectoralis Major: Also known as pecs, these muscles cover your chest. These muscles are also responsible for connecting the chest and shoulders. </li>
-    <li>Rhomboid Major: It is a back muscle that joins the spine and shoulder blades. </li>
-    <li>Serratus Anterior: These muscles are present under your armpit, at the side of your chest. </li>
-    <li>Rotator Cuff: These muscles are responsible for articulation between the shoulders and the arms. </li>
+    <li>Militærpress: Plasser føttene i skulderbreddes avstand. Hvil stangen på forsiden av skuldrene. Ha et overhåndsgrep med god avstand mellom hendene. Stangen skal presses opp over hodet. Albueleddet skal være helt utstrakt i topposisjon. Pass på at stangen løftes rett opp, og ikke for langt ut fra kroppen. </li>
+    <li>Kinesisk sidehev: Stå med føttene i hoftebreddes avstand. Hold en manual i hver hånd. Stå litt framoverlent med overkroppen. Vri manualene slik at tomlene er vendt inn mot hverandre. Når du beveger armene ut og opp til siden vrir du naturlig manualene med tomlene opp og inn mot toppen av hodet. Husk å plasser skuldrene ned og bak i topposisjon. Kom ned til startposisjon og gjenta. </li>
     </ul>
      </div>
     
