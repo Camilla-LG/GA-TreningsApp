@@ -3,7 +3,7 @@ function mainPage() {
     // let dayFinished = model.input.schedule.task[0].isDone? 'Finish this day': '';
 
     document.getElementById('app').innerHTML = /*HTML*/`
-    <h1> Main Page </h1>
+    <h1> Hovedside </h1>
     <div onclick="profileView()" class="profilePic" ><img style="width:180px; height:fit-content;" src="${model.app.loggedInUser.profileImg}" alt="No img"></div>
     <div class="mainArea">
         <div class="menu">
@@ -11,8 +11,8 @@ function mainPage() {
             <div onclick="loggView()"> Logg </div>
             <div onclick="wikiPage()"> Wiki </div>
             <div onclick="settingsPage()"> Innstillinger </div>
-            <div onclick="profileView()">Profile</div>
-            <div onclick="logOut()">Logout</div>
+            <div onclick="profileView()">Profil</div>
+            <div onclick="logOut()">Innlogging</div>
         </div>
         <div class="nextWorkout">
             <h3>Dagens plan</h3>
@@ -23,7 +23,7 @@ function mainPage() {
             </div>
             <div>${drawPlan()}</div>
             <div style=" display:flex; flex-direction: row-reverse; margin-right:500px;">
-            <button style="width:100px;" onclick="finishDay('main'); showFeedback()">Finish day</button>
+            <button style="width:100px;" onclick="finishDay('main'); showFeedback()">Fullfør dag</button>
             </div>
         </div>
     </div>

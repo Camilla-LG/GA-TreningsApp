@@ -33,16 +33,14 @@ function scheduleView() {
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
+                <td> Øvelse:squats Set:3 Reps:10 </td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
         </table>
         `;
-
 }
-
 
 
 function addTask(){
@@ -58,7 +56,7 @@ function addTask(){
     for (let i = 0; i < dateCells.length; i++) {
         if (dateCells[i].textContent == selectedDay) {
             let html = /*HTML*/`
-                * Øvelse:${taskInput.value}
+                Øvelse:${taskInput.value}
                 Antall set:${setInput.value} Antall reps:${repInput.value}
             `;
             const taskCell = taskCells[i];
@@ -67,18 +65,7 @@ function addTask(){
             taskCell.textContent = task.join('\n');
             break;
         }
-        
-    let task = [{
-        time:'',
-        workout: taskInput.value,
-        log:'',
-        set: setInput.value,
-        rep: repInput.value,
-    }];
-
-    model.app.loggedInUser.schedule.task.push(task);
     }
-    updateTaskList();
 }
 
 function updateTaskList() {
