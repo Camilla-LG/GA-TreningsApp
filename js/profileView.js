@@ -1,7 +1,7 @@
 
 function profileView() {
   document.getElementById("app").innerHTML = /*HTML*/ `
-    <h1>Profile</h1>
+    <h1>Profil</h1>
     <img style="height:100px; witdh: fit-content;" src="${model.app.loggedInUser.profileImg}">
 
     <div id="usernameDiv">${model.app.loggedInUser.profileName}<div>
@@ -11,8 +11,8 @@ function profileView() {
     <div id="userHeight">${model.app.loggedInUser.height}</div>
     <div id="userWeight">${model.app.loggedInUser.weight}</div>
     <div id="userBio" style="height:fit-contnet;width:250px; border:solid; overflow:hidden;">${model.app.loggedInUser.aboutMe}</div>
-    <button onclick="mainPage()">Main page</button>
-    <button onclick="editProfileView()">Edit profile</button>
+    <button onclick="mainPage()">Hovedside</button>
+    <button onclick="editProfileView()">Endre profil</button>
 
     `;
   // profileText.innerHTML = username;
@@ -24,10 +24,10 @@ function profileView() {
 
 function editProfileView() {
   document.getElementById("app").innerHTML = /*HTML*/ `
-    <h1>Profile</h1>
-    <div>Profile image:</div>
+    <h1>Profil</h1>
+    <div>Profil bilde:</div>
     <input type="text" id="imgInput" value="${model.input.editProfileImg}" onchange="model.input.editProfileImg = this.value">
-    <button onclick="setImg()">Set image</button>
+    <button onclick="setImg()">Endre bilde</button>
     <br>
     <div>
     <img style="height:100px; witdh: fit-content;" src="${model.app.loggedInUser.profileImg}">
@@ -39,6 +39,6 @@ function editProfileView() {
     <div id="userWeight"><input value="${model.app.loggedInUser.weight}" oninput="model.app.loggedInUser.weight = this.value"></div>
     <div id="userBio"><input style="height:fit-content; weight:150px;" value="${model.app.loggedInUser.aboutMe}" oninput="model.app.loggedInUser.aboutMe = this.value"></div>
 
-    <button onclick="profileView()">Save</button>
+    <button onclick="profileView()">Lagre</button>
     `;
 }
