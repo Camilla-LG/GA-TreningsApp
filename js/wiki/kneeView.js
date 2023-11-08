@@ -6,8 +6,8 @@ function kneeView(){
     <h1>MuscleWiki</h1>
     <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
-   <!-- <img class="wikiShoulder" src="https://www.shoulder-pain-explained.com/images/shoulder-bones-anatomy.png"><img> -->
-    <div class="treningsInfo"><h1>Knees</h1><p> 
+   
+    <div class="treningsInfo"> <h1>Knees</h1><p> 
     <ul>
     <li>Box Jumps: Hopp opp på en boks eller plattform og land mykt, deretter hopp ned igjen og gjenta </li>
     <li>Leg Press: Dette kan utføres på en maskin på treningssenteret. Sitte og dytte vekter vekk med bena. Pass på å bruke passende vekter og teknikk for å unngå belastning på knærne.</li>
