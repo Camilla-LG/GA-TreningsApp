@@ -6,7 +6,8 @@ function armView(){
     <button class="wikiHeaderBackground"></button>
     <button class="wikiMenuButton"onclick="wikiPage()">X</button>
     
-    <div class="treningsInfo">Dumbbell bicep curl <p> Start standing with your feet shoulder-width apart holding a pair of dumbbells at your sides in a neutral grip (hands facing each other). 
+    <div class="treningsInfo"> <h1>Armer</h1>
+    Dumbbell bicep curl <p> Start standing with your feet shoulder-width apart holding a pair of dumbbells at your sides in a neutral grip (hands facing each other). 
     Squeeze your shoulders, abs, and glutes to create full-body tension.
     Squeeze one of your biceps to lift the dumbbell up. Move only at the elbow.
     </div>
