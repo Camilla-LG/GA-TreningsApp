@@ -30,7 +30,7 @@ const model = {
       userName: "Test",
       password: "ave",
       profileName: "Navn",
-      profileImg: `https://static1.srcdn.com/wordpress/wp-content/uploads/2021/08/Ryan-Reynolds-in-Free-Guy.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5`,
+      profileImg: ``,
       homeTown: "Test Sted",
       age: "Alder",
       sex: "", 

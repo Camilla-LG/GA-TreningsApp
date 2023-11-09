@@ -1,4 +1,4 @@
-mainPage()
+
 function mainPage() {
     // let dayFinished = model.input.schedule.task[0].isDone? 'Finish this day': '';
 
